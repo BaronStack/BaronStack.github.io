@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="Mr.张">
   <!-- Open Graph Data -->
-  <meta property="og:title" content="你开心我就很开心"/>
+  <meta property="og:title" content="关于linux下不同脚本执行方式的区别"/>
   <meta property="og:description" content="" />
   <meta property="og:site_name" content="那一刻 风情万种"/>
   <meta property="og:type" content="article" />
@@ -43,7 +43,7 @@
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <div class="page-title with-background-image">
-          <p class="title">你开心我就很开心</p>
+          <p class="title">关于linux下不同脚本执行方式的区别</p>
           <p class="subtitle"></p>
         </div>
         <div class="site-menu with-background-image">
@@ -99,26 +99,42 @@
           
           <!-- Date -->
           <span class="date-time info">On
-            <span class="date">2018-01-15</span>
+            <span class="date">2018-01-16</span>
             <span class="time">21:10:57</span>
           </span>
           
           <!--  Categories  -->
             <span class="categories info">Under 
 
-<a href="/categories/日记/">日记</a>
+<a href="/categories/linux/">linux</a>
 </span>
           
         </div>
         <!-- Tags -->
         
+          <div class="post-tags text-muted">
+            Tags: 
+
+<a class="tag" href="/tags/linux/">#linux</a> <a class="tag" href="/tags/shell/">#shell</a>
+
+
+          </div>
+        
         <!-- Post Main Content -->
         <div class="post-content">
-          <p><img src="/images/小永永.jpg" alt=""></p>
-<p>今天去街上和妹妹买了衣服，买了一件很不错的皮衣。我觉得穿上它站在你身边会很舒服。之后去<br>看了电影《无问西东》。<a id="more"></a>针对电影的逻辑搭配，我觉得导演剽窃了《云图》的创意，采用看似四个独立的不同年代的故事，但是每个故事都对<br>之后的故事中的世界或者人物的命运产生了一定的影响。相对于云图的隐晦表达，它很明显得表达出了要表达的内容：<br>一个人无论做什么都应该听从内心最真实的：勇敢、正义、无谓、同情。</p>
-<p>其中让我感触最深的是黄晓明和章子怡的故事演出，爱情上：当全世界都在反对你，只有真正站在你身边的人才是最爱你的人。做为男生：一定要有理想抱负，<br>尽力为包容我们的世界作出值得有用的贡献！陈鹏（黄晓明饰）为了王敏佳（章子怡饰）愿意抛弃自己所热爱的事业，但是当他看到敏佳和好友在一起以为敏佳有了<br>托付，毅然投身到核物理研究之中，但是当敏佳因为背叛和错误坠入深渊，遭万人唾骂，陈鹏赶了回来，从死神边缘将敏佳拉了回来。我喜欢陈鹏纯粹，执着得去做自己<br>喜欢的事情，去追逐自己喜欢的人。他在任何时候都在听从自己内心最真实的声音，无问西东，为了你我可以抛弃全世界！</p>
-<p>总之我从电影中看到了”立德立言，无问西东”。</p>
-<p>晚上给你photoshop了一张可爱的皮卡丘，作图的时候一直在笑，结果有几个地方没有做好。发给你，感受到了你的开心。那个时候内心真的是心潮澎湃，感觉你看到图片<br>时候的笑声就回荡在我的耳边，开心之极，希望每天都能给你一个小惊喜，让你每天都能开开心心的，那个时候我绝对是最开心的！</p>
+          <p>Linux系统下常见的脚本执行方式有</p>
+<ul>
+<li>source script</li>
+<li>sh script</li>
+<li>./script<a id="more"></a>
+其实执行方式相差不多的是第二种和第三种<br><code>sh script</code>和<code>./script</code>执行过程中都会使用一个新的bash（linux系统默认的脚本，当然还有csh,sh,zsh,tcsh,ksh等)<br>来执行脚本中的命令，也就是说<strong>script是在子进程的bash内执行的，当然在子进程执行结束后，进程中的各项变量和操作是不会传回到父进程</strong></li>
+</ul>
+<p>然而用<code>source script</code>来执行，那么结果就不一样了，source命令使得script的执行方式在父进程中执行，因此各项操作会在原本的bash中生效，<br>这也就是为什么要使得写入~/.bashrc中的设置生效需要使用命令source</p>
+<p>各位可以编写这样一个脚本来尝试一下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">#!/bin/bash</span><br><span class="line">#Program:</span><br><span class="line">#       Users input 2 numbers,the program will input them.</span><br><span class="line">#History:</span><br><span class="line">#2018/01/16     Vigor   First Release</span><br><span class="line">PATH=/home/vigor/bin:/home/vigor/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin</span><br><span class="line">export PATH</span><br><span class="line"></span><br><span class="line">echo -e &quot;You need to input 2 numbers,i will cross them&quot;</span><br><span class="line">read -p &quot;first number:&quot; firstnum</span><br><span class="line">read -p &quot;second number:&quot; secnum</span><br><span class="line"></span><br><span class="line">total=$(($firstnum*$secnum))</span><br><span class="line"></span><br><span class="line">echo -e &quot;\nThe result of $firstnum x $secnum is ==&gt; $total&quot;</span><br></pre></td></tr></table></figure></p>
+<p>将该脚本命名为sh03.sh，保存之后修改执行权限为所有用户可执行<br><code>chmod a+x sh03.sh</code></p>
+<p>利用直接执行方式，即上面提到的后两种都可以来运行看看，<br>然后再用source执行脚本看看结果</p>
+<p><img src="/images/sh03Cross.jpg" alt=""><br><img src="/images/sh03Source.jpg" alt=""></p>
+<p>很明显能够看到在脚本中我们对变量total进行了赋值，但是利用<code>./script</code>执行之后在原来的脚本中total是空值，相反<br>利用<code>source</code>执行之后却可以在原来的脚本看到total的值。显然，利用source是在父进程中执行，而其他两种是在子进程中执行。</p>
 
         </div>
       </div>
