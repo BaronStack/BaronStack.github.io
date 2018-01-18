@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-01-17T02:28:43.000Z</updated>
+  <updated>2018-01-17T15:57:43.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,51 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>今天有点累</title>
+    <link href="http://yoursite.com/2018/01/17/%E4%BB%8A%E5%A4%A9%E6%9C%89%E7%82%B9%E7%B4%AF/"/>
+    <id>http://yoursite.com/2018/01/17/今天有点累/</id>
+    <published>2018-01-17T15:25:10.000Z</published>
+    <updated>2018-01-17T15:57:43.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>今天又有点累，真是对自己无语了。<br>看到妹妹在家里吃着妈妈做的大餐，我却只能在学校啃着干面包，心里不平衡呀。<a id="more"></a>而且她竟然给我发她吃饭时候的疯狂状态，哎呀，我都难受死了。<br>不过谁让这是咱自己的选择嘞，那就要坚持下去，毕竟每天还是挺充实的。心里有了一个人，做事情的时候总是会比以前多付出一些努力。</p><p>妈妈说爱一个人是一件很幸福的事情，这句话我体会到了。很感谢有一个这样的妈妈，虽然妈妈是农民，但是她以前是可以上大学的，只是因为没有后台被别人<br>给代替了，这是她一生最为遗憾的事情！她从来没有强迫我做一些不喜欢的事情，随着年龄和学历的增长，妈妈再也不能对我的学习进行辅导了，但是她却可以<br>辅导我的人生。她总告诉我和妹妹：先学会做人，再去学做事。我从妈妈的身上看到了做为一名传统中国女性所拥有的傲气与坚韧，她支持我去做我喜欢的事情，<br>追求我心中所喜欢的人，可能这是天下所有母亲内心的写照：希望自己的孩子开心快乐。<br>想回家吃饭，吃妈妈做的炒土豆丝，煎豆腐，醋溜白菜。。。。。。不过现在还是得努力学习。</p><p>下午本来想给学长秀一波操作，在Linux下配置pycharm的tensor flow开发环境。因为我是在自己电脑上配置好了的，结果发现问题完全不一样，自信满满得<br>上去，最后赤裸裸得打脸，解决不了。妈蛋，谁让自己作，还好学长人比较好，要不然我就得受点打击了。不过还好，一些linux的基础命令掌握还算牢固，没有<br>出什么差错。</p><p>小小的总结一下：</p><ul><li>做事情三思而后行，每一次在大众面前的呈现都是自己一段时间的积累，万不可掉以轻心</li><li>重要的知识一定要掌握牢固，最好让它成为自己的潜意识，所以这里就需要多得实践（linux:解压命令，打开指定软件的命令，下载安装命令，卸载命令）</li><li>不会的要多请教（针对今天出现的问题是因为：1.程序写的不对 2.文件存放的位置不对（可能是，明天得再去看看））</li></ul><p>好啦，今天就写到这里。以前没有想过写日记，发现其实还是蛮有意思的，古人问：我日三省我身，高否？富否？帅否？我答：否 古人云：该睡觉啦<br>嗯～～～有道理，那就去做呗。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;今天又有点累，真是对自己无语了。&lt;br&gt;看到妹妹在家里吃着妈妈做的大餐，我却只能在学校啃着干面包，心里不平衡呀。
+    
+    </summary>
+    
+      <category term="日记" scheme="http://yoursite.com/categories/%E6%97%A5%E8%AE%B0/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Mac将tensorflow的python环境配置到pycharm</title>
+    <link href="http://yoursite.com/2018/01/17/Mac%E5%B0%86python%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E5%88%B0pycharm/"/>
+    <id>http://yoursite.com/2018/01/17/Mac将python环境配置到pycharm/</id>
+    <published>2018-01-17T12:56:00.000Z</published>
+    <updated>2018-01-17T13:29:32.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>当我们开始学习tensor flow的时候，环境有了，但是没有一个好的python运行环境会很难受，所以在这里推荐几个很受用的python运行环境。今天是第一次<br>接触pycharm，正如它所起的名字一样”迷人的python”,你会在见到它的第一眼就被深深得吸引。<br>以下是它的运行环境：</p><p><img src="/images/pycharm.png" alt=""><a id="more"></a></p><p>使用起来的感觉就和做前端开发对webstorm的感觉一样，快捷，功能强大（支持各种插件：terminal,git…）</p><p>在搭建好tensor flow运行环境之后我们想要让pycharm 拥有一样的tensor flow开发环境，那么需要做一个很简单的路径配置。大家先在<a href="https://www.tensorflow.org" target="_blank" rel="noopener">tersor flow</a><br>官网,按照教程搭建好自己的开发环境。此外安装破解版<a href="http://www.sdifen.com/phpstorm201623.html" target="_blank" rel="noopener">pycharm</a>.</p><p>接下来按照如下操作步骤配置自己的pycharm的tensor flow开发环境 </p><ol><li>终端下进入tersor flow运行脚本，输入<code>which python</code>之后，复制得到的python路径</li><li>打开pycharm–》preferences–》在左侧搜索栏中搜索project interpreter –》点击一个设置图标，点击”Add Local” –》将复制的python路<br>径输入进去–》点击OK</li></ol><p>大功告成，截图如下<br><img src="/images/project_interpreter.png" alt=""></p><p><img src="/images/printCutSet.png" alt=""></p><p><img src="/images/addLocal.png" alt=""></p><p><img src="/images/inputPath.png" alt=""></p><p><img src="/images/successOutput.png" alt=""></p><p>大家就可以开心得在一个优雅的编译器下尽情做tensor flow尝试啦 </p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;当我们开始学习tensor flow的时候，环境有了，但是没有一个好的python运行环境会很难受，所以在这里推荐几个很受用的python运行环境。今天是第一次&lt;br&gt;接触pycharm，正如它所起的名字一样”迷人的python”,你会在见到它的第一眼就被深深得吸引。&lt;br&gt;以下是它的运行环境：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/pycharm.png&quot; alt=&quot;&quot;&gt;
+    
+    </summary>
+    
+      <category term="tensor flow" scheme="http://yoursite.com/categories/tensor-flow/"/>
+    
+    
+      <category term="machine learning" scheme="http://yoursite.com/tags/machine-learning/"/>
+    
+      <category term="python" scheme="http://yoursite.com/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>Python 中出现Non-ASCII character的解决办法</title>

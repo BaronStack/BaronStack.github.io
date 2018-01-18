@@ -8,10 +8,10 @@
   <meta name="description" content="">
   <meta name="author" content="Mr.张">
   <!-- Open Graph Data -->
-  <meta property="og:title" content="那一刻 风情万种"/>
+  <meta property="og:title" content="Mac将tensorflow的python环境配置到pycharm"/>
   <meta property="og:description" content="" />
   <meta property="og:site_name" content="那一刻 风情万种"/>
-  <meta property="og:type" content="website" />
+  <meta property="og:type" content="article" />
   <meta property="og:image" content="http://yoursite.com"/>
   
     <link rel="alternate" href="/atom.xml" title="那一刻 风情万种" type="application/atom+xml">
@@ -35,8 +35,7 @@
 </head>
 
   <body>
-    <!-- Archive Header -->
-<!-- Page Header -->
+    <!-- Page Header -->
 
 
 <header class="site-header header-background" style="background-image: url(/img/default-banner-dark.jpg)">
@@ -44,7 +43,7 @@
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <div class="page-title with-background-image">
-          <p class="title">Blog Archives</p>
+          <p class="title">Mac将tensorflow的python环境配置到pycharm</p>
           <p class="subtitle"></p>
         </div>
         <div class="site-menu with-background-image">
@@ -89,106 +88,61 @@
   </div>
 </header>
 
-<!-- Archive List -->
-<div class="container">
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-      
-        <div class="archive-item">
-  <a href="/2018/01/17/今天有点累/" class="post-title">
-    今天有点累
-  </a>
-  <div class="date text-muted">Posted on 2018-01-17 23:25:10</div>
-</div>
+<article>
+  <div class="container typo">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="post-info text-muted">
+          
+            <!-- Author -->
+            <span class="author info">By Mr.张</span>
+          
+          <!-- Date -->
+          <span class="date-time info">On
+            <span class="date">2018-01-17</span>
+            <span class="time">09:32:21</span>
+          </span>
+          
+          <!--  Categories  -->
+            <span class="categories info">Under 
 
-      
-        <div class="archive-item">
-  <a href="/2018/01/17/Mac将python环境配置到pycharm/" class="post-title">
-    Mac将tensorflow的python环境配置到pycharm
-  </a>
-  <div class="date text-muted">Posted on 2018-01-17 20:56:00</div>
-</div>
+<a href="/categories/tensor-flow/">tensor flow</a>
+</span>
+          
+        </div>
+        <!-- Tags -->
+        
+          <div class="post-tags text-muted">
+            Tags: 
 
-      
-        <div class="archive-item">
-  <a href="/2018/01/17/Python-中出现Non-ASCII-character的解决办法/" class="post-title">
-    Python 中出现Non-ASCII character的解决办法
-  </a>
-  <div class="date text-muted">Posted on 2018-01-17 10:17:25</div>
-</div>
+<a class="tag" href="/tags/machine-learning/">#machine learning</a> <a class="tag" href="/tags/python/">#python</a>
 
-      
-        <div class="archive-item">
-  <a href="/2018/01/16/很不错的景色/" class="post-title">
-    很不错的景色
-  </a>
-  <div class="date text-muted">Posted on 2018-01-16 22:54:31</div>
-</div>
 
-      
-        <div class="archive-item">
-  <a href="/2018/01/16/关于linux下不同脚本执行方式的区别/" class="post-title">
-    关于linux下不同脚本执行方式的区别
-  </a>
-  <div class="date text-muted">Posted on 2018-01-16 20:42:41</div>
-</div>
+          </div>
+        
+        <!-- Post Main Content -->
+        <div class="post-content">
+          <p>当我们开始学习tensor flow的时候，环境有了，但是没有一个好的python运行环境会很难受，所以在这里推荐几个很受用的python运行环境。今天是第一次<br>接触pycharm，正如它所起的名字一样”迷人的python”,你会在见到它的第一眼就被深深得吸引。<br>以下是它的运行环境：</p>
+<p><img src="/images/pycharm.png" alt=""><a id="more"></a></p>
+<p>使用起来的感觉就和做前端开发对webstorm的感觉一样，快捷，功能强大（支持各种插件：terminal,git…）</p>
+<p>在搭建好tensor flow运行环境之后我们想要让pycharm 拥有一样的tensor flow开发环境，那么需要做一个很简单的路径配置。大家先在<a href="https://www.tensorflow.org" target="_blank" rel="noopener">tersor flow</a><br>官网,按照教程搭建好自己的开发环境。此外安装破解版<a href="http://www.sdifen.com/phpstorm201623.html" target="_blank" rel="noopener">pycharm</a>.</p>
+<p>接下来按照如下操作步骤配置自己的pycharm的tensor flow开发环境 </p>
+<ol>
+<li>终端下进入tersor flow运行脚本，输入<code>which python</code>之后，复制得到的python路径</li>
+<li>打开pycharm–》preferences–》在左侧搜索栏中搜索project interpreter –》点击一个设置图标，点击”Add Local” –》将复制的python路<br>径输入进去–》点击OK</li>
+</ol>
+<p>大功告成，截图如下<br><img src="/images/project_interpreter.png" alt=""></p>
+<p><img src="/images/printCutSet.png" alt=""></p>
+<p><img src="/images/addLocal.png" alt=""></p>
+<p><img src="/images/inputPath.png" alt=""></p>
+<p><img src="/images/successOutput.png" alt=""></p>
+<p>大家就可以开心得在一个优雅的编译器下尽情做tensor flow尝试啦 </p>
 
-      
-        <div class="archive-item">
-  <a href="/2018/01/15/你开心我就很开心/" class="post-title">
-    你开心我就很开心
-  </a>
-  <div class="date text-muted">Posted on 2018-01-15 13:28:39</div>
-</div>
-
-      
-        <div class="archive-item">
-  <a href="/2018/01/15/利用grep-配合数据流重定向查找处理大量文件查找问题/" class="post-title">
-    利用grep 配合数据流重定向查找处理大量文件查找问题
-  </a>
-  <div class="date text-muted">Posted on 2018-01-15 10:45:24</div>
-</div>
-
-      
-        <div class="archive-item">
-  <a href="/2018/01/13/关于基础正则表达在linux下的应用/" class="post-title">
-    关于基础正则表达在linux下的应用
-  </a>
-  <div class="date text-muted">Posted on 2018-01-13 23:52:44</div>
-</div>
-
-      
-        <div class="archive-item">
-  <a href="/2018/01/13/回眸一笑百媚生/" class="post-title">
-    回眸一笑百媚生
-  </a>
-  <div class="date text-muted">Posted on 2018-01-13 22:52:18</div>
-</div>
-
-      
-        <div class="archive-item">
-  <a href="/2018/01/13/新的开端/" class="post-title">
-    新的开端
-  </a>
-  <div class="date text-muted">Posted on 2018-01-13 00:09:52</div>
-</div>
-
-      
-
+        </div>
+      </div>
     </div>
   </div>
-</div>
-<!-- Pagination -->
-<div class="container">
-  <div class="row">
-    <div class="col-lg-10 col-md-10 col-md-offset-1">
-      <ul class="pagination">
-          
-          
-      </ul>
-    </div>
-  </div>
-</div>
+</article>
 
 
 
