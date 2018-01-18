@@ -8,10 +8,10 @@
   <meta name="description" content="">
   <meta name="author" content="Mr.张">
   <!-- Open Graph Data -->
-  <meta property="og:title" content="那一刻 风情万种"/>
+  <meta property="og:title" content="关于tensor flow废弃的API"/>
   <meta property="og:description" content="" />
   <meta property="og:site_name" content="那一刻 风情万种"/>
-  <meta property="og:type" content="website" />
+  <meta property="og:type" content="article" />
   <meta property="og:image" content="http://yoursite.com"/>
   
     <link rel="alternate" href="/atom.xml" title="那一刻 风情万种" type="application/atom+xml">
@@ -35,8 +35,7 @@
 </head>
 
   <body>
-    <!-- Archive Header -->
-<!-- Page Header -->
+    <!-- Page Header -->
 
 
 <header class="site-header header-background" style="background-image: url(/img/default-banner-dark.jpg)">
@@ -44,7 +43,7 @@
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <div class="page-title with-background-image">
-          <p class="title">Blog Archives</p>
+          <p class="title">关于tensor flow废弃的API</p>
           <p class="subtitle"></p>
         </div>
         <div class="site-menu with-background-image">
@@ -89,42 +88,51 @@
   </div>
 </header>
 
-<!-- Archive List -->
-<div class="container">
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-      
-        <div class="archive-item">
-  <a href="/2018/01/18/关于tensor-flow废弃的API/" class="post-title">
-    关于tensor flow废弃的API
-  </a>
-  <div class="date text-muted">Posted on 2018-01-18 11:39:19</div>
-</div>
+<article>
+  <div class="container typo">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="post-info text-muted">
+          
+            <!-- Author -->
+            <span class="author info">By Mr.张</span>
+          
+          <!-- Date -->
+          <span class="date-time info">On
+            <span class="date">2018-01-18</span>
+            <span class="time">18:00:20</span>
+          </span>
+          
+          <!--  Categories  -->
+            <span class="categories info">Under 
 
-      
-        <div class="archive-item">
-  <a href="/2018/01/17/Mac将python环境配置到pycharm/" class="post-title">
-    Mac将tensorflow的python环境配置到pycharm
-  </a>
-  <div class="date text-muted">Posted on 2018-01-17 20:56:00</div>
-</div>
+<a href="/categories/tensor-flow/">tensor flow</a>
+</span>
+          
+        </div>
+        <!-- Tags -->
+        
+          <div class="post-tags text-muted">
+            Tags: 
 
-      
+<a class="tag" href="/tags/machine-learning/">#machine learning</a>
 
+
+          </div>
+        
+        <!-- Post Main Content -->
+        <div class="post-content">
+          <p>今天开始写一些tensor flow 的代码，发现官网上的一些样例程序无法运行，会出现一些找不到函数的情况。查阅之后发现原来是官网对tensor flow 包进<br>行了更新，只是还没有将官网的程序进行更新。<a id="more"></a></p>
+<p>主要是以下几个API： </p>
+<p><code>tf.mul</code>和<code>tf.sub</code>和<code>tf.neg</code> 取乘运算，取减运算，取负运算</p>
+<p>更改为</p>
+<p><code>tf.multiply</code>和<code>tf.subtract</code>和<code>tf.negative</code>，这样在进行基础矩阵运算的时候就可以使用这些函数正常进行运算    </p>
+
+        </div>
+      </div>
     </div>
   </div>
-</div>
-<!-- Pagination -->
-<div class="container">
-  <div class="row">
-    <div class="col-lg-10 col-md-10 col-md-offset-1">
-      <ul class="pagination">
-          
-          
-      </ul>
-    </div>
-  </div>
-</div>
+</article>
 
 
 
