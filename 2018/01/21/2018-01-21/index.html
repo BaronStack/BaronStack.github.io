@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="Mr.张">
   <!-- Open Graph Data -->
-  <meta property="og:title" content="利用grep 配合数据流重定向查找处理大量文件查找问题"/>
+  <meta property="og:title" content="2018-01-21"/>
   <meta property="og:description" content="" />
   <meta property="og:site_name" content="那一刻 风情万种"/>
   <meta property="og:type" content="article" />
@@ -43,7 +43,7 @@
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <div class="page-title with-background-image">
-          <p class="title">利用grep 配合数据流重定向查找处理大量文件查找问题</p>
+          <p class="title">2018-01-21</p>
           <p class="subtitle"></p>
         </div>
         <div class="site-menu with-background-image">
@@ -99,49 +99,33 @@
           
           <!-- Date -->
           <span class="date-time info">On
-            <span class="date">2018-01-15</span>
+            <span class="date">2018-01-21</span>
             <span class="time">10:05:24</span>
           </span>
           
           <!--  Categories  -->
             <span class="categories info">Under 
 
-<a href="/categories/linux/">linux</a>
+<a href="/categories/日记/">日记</a>
 </span>
           
         </div>
         <!-- Tags -->
         
-          <div class="post-tags text-muted">
-            Tags: 
-
-<a class="tag" href="/tags/linux/">#linux</a>
-
-
-          </div>
-        
         <!-- Post Main Content -->
         <div class="post-content">
-          <h6 id="情境模拟-：通过grep查找特殊字符串，并配合数据流重定向来处理大量的文件查找问题"><a href="#情境模拟-：通过grep查找特殊字符串，并配合数据流重定向来处理大量的文件查找问题" class="headerlink" title="情境模拟 ：通过grep查找特殊字符串，并配合数据流重定向来处理大量的文件查找问题"></a>情境模拟 ：通过grep查找特殊字符串，并配合数据流重定向来处理大量的文件查找问题</h6><ul>
-<li>目标：正确使用正则表达式</li>
-<li>前提：了解数据流重定向，以及通过子命令$(command)来处理文件名的查找<a id="more"></a></li>
+          <p>废话不多说，先上一个关于人工智能以及深度学习入门的一个大佬的博客链接<a href="https://morvanzhou.github.io/" target="_blank" rel="noopener">莫烦</a>，这两天一直在看他的教学视频，真的是受益匪浅。<a id="more"></a></p>
+<p>我从他的视频讲解中了解到的一些理论知识如下：</p>
+<ul>
+<li>什么是神经网络</li>
+<li>什么是梯度下降</li>
+<li>什么是激励函数</li>
 </ul>
-<h6 id="利用正则表达式查找系统中含有某些特殊关键字的文件"><a href="#利用正则表达式查找系统中含有某些特殊关键字的文件" class="headerlink" title="利用正则表达式查找系统中含有某些特殊关键字的文件"></a>利用正则表达式查找系统中含有某些特殊关键字的文件</h6><p><code>grep &#39;\*&#39; /etc/*</code> 查找/etc／一级目录文件下查找含有*的文件内容</p>
-<blockquote>
-<p>‘\<em>‘是正则表达式,代表的是”\</em>“这个字符，而”*“如果不用”\“进行转义表示的是0，或者无穷多个前一个字符。<br> /etc/<em>中”\</em>“表示的是脚本bash通配符，代表文件名</p>
-</blockquote>
-<p> 如果想要查找连同完整的/etc 目录数据，就需要这样做</p>
-<p> <code>grep &#39;\*&#39; $(find /etc -type f)</code></p>
-<blockquote>
-<p>$(command)表示子命令，即先执行find查找文件，再执行grep 命令从文件中找出含有*的字符串</p>
-</blockquote>
-<p> 如果查找的是整个系统的文件,可以</p>
-<p> <code>grep &#39;\*&#39; $(find / -type f)</code> </p>
-<p> 这个时候可能会出现系统文件过多，而命令列的长度有限制系统会爆出<br> <code>-bash: /bin/grep: Argument list too long</code>的问题</p>
-<p> 那么可以利用数据流重定向中的管道命令以及xargs命令，让grep每次处理文件的数目少点</p>
-<p> <code>find / -type f | xargs -n 10 grep &#39;\*&#39;</code></p>
-<p> 讲整个系统文件利用xargs分成10个一组，每次grep命令仅处理10个文件</p>
-<p> 关于xargs命令的详细使用方式可以参考<a href="http://man.linuxde.net/xargs" target="_blank" rel="noopener">xargs</a></p>
+<p>这一些基础且重要的概念，让我在实践过程中对神经网络有了更深一步的了解</p>
+<p><strong>神经网络（NEURAL NETS）</strong> ：计算机中的神经网络是模拟人的神经网络的形成和功能的一种基于统计学、数学、计算机科学的模型。它可以对输入和输出数据之间的关系进行建模，从而产生特定且有用的概率数据。当然，神经网络通过很多层的数据处理，将输入的大量数据通过不断的反馈优化，降低其与真实值之间的差距，产生一个较高概率的结果。</p>
+<p><strong>梯度下降 (GRADIENT DESCENT)</strong> ：神经网络在进行数据预测的时候会有一个误差方程，来降低真是结果与预测结果之间的误差，这个降低误差的过程就叫做梯度下降。当然Tensorflow中所拥有的API可以进类似于梯度下降的功能！</p>
+<p><strong>激励函数（ACTIVATION FUNCTION）</strong> ：为了解决日常生活中不能用线性方程解决的问题（一般神经网络中数值关系理想状态下都是线性的，但是理想是美好的，现实是残酷的，那么就需要激励函数将理想中的数值关系强行掰弯），从而使得训练的输出结果拥有非线性的关系，提升预测结果概率。（TENSORFLOW 官网有大量的激励函数，在神经网CNN一般使用relu,在神经网络RNN常使用relu和tanh）</p>
+<p>一些实际的Tensor flow程序可以参考莫烦的github，而且他的视频对程序的讲解很详细，一定要耐心琢磨。</p>
 
         </div>
       </div>
