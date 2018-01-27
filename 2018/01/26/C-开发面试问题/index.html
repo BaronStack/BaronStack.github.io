@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="Mr.张">
   <!-- Open Graph Data -->
-  <meta property="og:title" content="Mac将tensorflow的python环境配置到pycharm"/>
+  <meta property="og:title" content="C++开发面试问题"/>
   <meta property="og:description" content="" />
   <meta property="og:site_name" content="那一刻 风情万种"/>
   <meta property="og:type" content="article" />
@@ -43,7 +43,7 @@
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <div class="page-title with-background-image">
-          <p class="title">Mac将tensorflow的python环境配置到pycharm</p>
+          <p class="title">C++开发面试问题</p>
           <p class="subtitle"></p>
         </div>
         <div class="site-menu with-background-image">
@@ -99,45 +99,57 @@
           
           <!-- Date -->
           <span class="date-time info">On
-            <span class="date">2018-01-17</span>
+            <span class="date">2018-01-26</span>
             <span class="time">22:11:09</span>
           </span>
           
           <!--  Categories  -->
             <span class="categories info">Under 
 
-<a href="/categories/tensor-flow/">tensor flow</a>
+<a href="/categories/面试/">面试</a>
 </span>
           
         </div>
         <!-- Tags -->
         
-          <div class="post-tags text-muted">
-            Tags: 
-
-<a class="tag" href="/tags/machine-learning/">#machine learning</a> <a class="tag" href="/tags/python/">#python</a>
-
-
-          </div>
-        
         <!-- Post Main Content -->
         <div class="post-content">
-          <p>当我们开始学习tensor flow的时候，环境有了，但是没有一个好的python运行环境会很难受，所以在这里推荐几个很受用的python运行环境。今天是第一次<br>接触pycharm，正如它所起的名字一样”迷人的python”,你会在见到它的第一眼就被深深得吸引。<br>以下是它的运行环境：</p>
-<p><img src="/images/pycharm.png" alt=""><a id="more"></a></p>
-<p>使用起来的感觉就和做前端开发对webstorm的感觉一样，快捷，功能强大（支持各种插件：terminal,git…）</p>
-<p>在搭建好tensor flow运行环境之后我们想要让pycharm 拥有一样的tensor flow开发环境，那么需要做一个很简单的路径配置。大家先在<a href="https://www.tensorflow.org" target="_blank" rel="noopener">tersor flow</a><br>官网,按照教程搭建好自己的开发环境。此外安装破解版<a href="http://www.sdifen.com/phpstorm201623.html" target="_blank" rel="noopener">pycharm</a>.</p>
-<p>接下来按照如下操作步骤配置自己的pycharm的tensor flow开发环境 </p>
-<ol>
-<li>终端下进入tersor flow运行脚本，输入<code>which python</code>之后，复制得到的python路径</li>
-<li>打开pycharm–》preferences–》在左侧搜索栏中搜索project interpreter –》点击一个设置图标，点击”Add Local” –》将复制的python路<br>径输入进去–》点击OK</li>
+          <h4 id="语言基础"><a href="#语言基础" class="headerlink" title="语言基础"></a>语言基础</h4><ul>
+<li>OOP（封装、继承、多态） + V func 的实现，V table 的原理</li>
+<li>const static的各种情况，分清const pointer 和pointer to const以及两者合体的形式<a id="more"></a></li>
+<li>内存泄漏 三条规则。注意exception safe和smart pointer（提到思想：谁拥有这个指针）的解决方式</li>
+<li>STL 至少了解allocator，常用的一些容器以及其实现原理</li>
+<li>rail 了解一下，用来做什么</li>
+</ul>
+<h4 id="操作系统"><a href="#操作系统" class="headerlink" title="操作系统"></a>操作系统</h4><ul>
+<li>进程管理 <ol>
+<li>什么是进程</li>
+<li>什么是context switch（上下文相关），干什么会触发它</li>
+<li>cost是什么</li>
+<li>虚拟内存和物理内存是什么</li>
+<li>进程竞争的条件</li>
 </ol>
-<p>大功告成，截图如下<br><img src="/images/project_interpreter.png" alt=""></p>
-<p><img src="/images/printCutSet.png" alt=""></p>
-<p><img src="/images/addLocal.png" alt=""></p>
-<p><img src="/images/inputPath.png" alt=""></p>
-<p><img src="/images/successOutput.png" alt=""></p>
-<p>大家就可以开心得在一个优雅的编译器下尽情做tensor flow尝试啦 </p>
-
+</li>
+<li>文件系统<ol>
+<li>MVC 了解</li>
+<li>堆栈的区别，给一个程序，要能够画出内存里程序运行的经过</li>
+<li>并发编程，了解.管道的概念</li>
+<li>cpu cache的运作，为什么很多数据结构或算法很好，运行却很慢</li>
+<li>动态链接和静态链接的优缺点</li>
+<li>编译的过程，从complie到linking. 做的事情</li>
+<li>如何避免环形依赖</li>
+</ol>
+</li>
+</ul>
+<h4 id="编程习惯"><a href="#编程习惯" class="headerlink" title="编程习惯"></a>编程习惯</h4><ul>
+<li>敏捷开发要了解，至少知道过程中有那些阶段code review,以及测试流程</li>
+<li>如何manage大型C++code,怎么分模块合理得继承，怎么分模块测试</li>
+<li>template以及metaprogramming了解</li>
+<li>现场写程序能加const就加const,小程序全inline,能传ref就传ref,开头一定要有哨兵#ifndef #define #endif</li>
+<li>出手要有namespace</li>
+<li>STL能用就用，tranform的使用以及自己会写comparator</li>
+</ul>
+<h4 id="基础数据结构以及算法—-《剑指-offer》《编程之美》《程序员面试指南》内容搞懂足够面对BAT"><a href="#基础数据结构以及算法—-《剑指-offer》《编程之美》《程序员面试指南》内容搞懂足够面对BAT" class="headerlink" title="基础数据结构以及算法—-《剑指 offer》《编程之美》《程序员面试指南》内容搞懂足够面对BAT"></a>基础数据结构以及算法—-《剑指 offer》《编程之美》《程序员面试指南》内容搞懂足够面对BAT</h4>
         </div>
       </div>
     </div>

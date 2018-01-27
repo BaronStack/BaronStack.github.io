@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-01-26T12:07:09.000Z</updated>
+  <updated>2018-01-27T02:43:27.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>C++开发面试问题</title>
+    <link href="http://yoursite.com/2018/01/26/C-%E5%BC%80%E5%8F%91%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98/"/>
+    <id>http://yoursite.com/2018/01/26/C-开发面试问题/</id>
+    <published>2018-01-26T14:47:27.000Z</published>
+    <updated>2018-01-27T02:43:27.000Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="语言基础"><a href="#语言基础" class="headerlink" title="语言基础"></a>语言基础</h4><ul><li>OOP（封装、继承、多态） + V func 的实现，V table 的原理</li><li>const static的各种情况，分清const pointer 和pointer to const以及两者合体的形式<a id="more"></a></li><li>内存泄漏 三条规则。注意exception safe和smart pointer（提到思想：谁拥有这个指针）的解决方式</li><li>STL 至少了解allocator，常用的一些容器以及其实现原理</li><li>rail 了解一下，用来做什么</li></ul><h4 id="操作系统"><a href="#操作系统" class="headerlink" title="操作系统"></a>操作系统</h4><ul><li>进程管理 <ol><li>什么是进程</li><li>什么是context switch（上下文相关），干什么会触发它</li><li>cost是什么</li><li>虚拟内存和物理内存是什么</li><li>进程竞争的条件</li></ol></li><li>文件系统<ol><li>MVC 了解</li><li>堆栈的区别，给一个程序，要能够画出内存里程序运行的经过</li><li>并发编程，了解.管道的概念</li><li>cpu cache的运作，为什么很多数据结构或算法很好，运行却很慢</li><li>动态链接和静态链接的优缺点</li><li>编译的过程，从complie到linking. 做的事情</li><li>如何避免环形依赖</li></ol></li></ul><h4 id="编程习惯"><a href="#编程习惯" class="headerlink" title="编程习惯"></a>编程习惯</h4><ul><li>敏捷开发要了解，至少知道过程中有那些阶段code review,以及测试流程</li><li>如何manage大型C++code,怎么分模块合理得继承，怎么分模块测试</li><li>template以及metaprogramming了解</li><li>现场写程序能加const就加const,小程序全inline,能传ref就传ref,开头一定要有哨兵#ifndef #define #endif</li><li>出手要有namespace</li><li>STL能用就用，tranform的使用以及自己会写comparator</li></ul><h4 id="基础数据结构以及算法—-《剑指-offer》《编程之美》《程序员面试指南》内容搞懂足够面对BAT"><a href="#基础数据结构以及算法—-《剑指-offer》《编程之美》《程序员面试指南》内容搞懂足够面对BAT" class="headerlink" title="基础数据结构以及算法—-《剑指 offer》《编程之美》《程序员面试指南》内容搞懂足够面对BAT"></a>基础数据结构以及算法—-《剑指 offer》《编程之美》《程序员面试指南》内容搞懂足够面对BAT</h4>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;语言基础&quot;&gt;&lt;a href=&quot;#语言基础&quot; class=&quot;headerlink&quot; title=&quot;语言基础&quot;&gt;&lt;/a&gt;语言基础&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;OOP（封装、继承、多态） + V func 的实现，V table 的原理&lt;/li&gt;
+&lt;li&gt;const static的各种情况，分清const pointer 和pointer to const以及两者合体的形式
+    
+    </summary>
+    
+      <category term="面试" scheme="http://yoursite.com/categories/%E9%9D%A2%E8%AF%95/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Python爬虫 爬取批量图片</title>
@@ -447,26 +469,6 @@
     
     
       <category term="linux" scheme="http://yoursite.com/tags/linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>回眸一笑百媚生</title>
-    <link href="http://yoursite.com/2018/01/13/%E5%9B%9E%E7%9C%B8%E4%B8%80%E7%AC%91%E7%99%BE%E5%AA%9A%E7%94%9F/"/>
-    <id>http://yoursite.com/2018/01/13/回眸一笑百媚生/</id>
-    <published>2018-01-13T14:52:18.000Z</published>
-    <updated>2018-01-20T07:35:08.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="/images/2.jpg" alt=""><br>看到这张照片我就想笑，挺想给你拍照的人是我，这样我就会距离你更近点，可以看到你那闪闪发光的眼睛！想到还有好长时间才能见到你，我就心慌慌！你把照片发给我，那我就只能对着屏幕仔细寻找那颗已经成为一条线的亮晶晶的星星啦。<br><a id="more"></a></p><p>实在是没有想到那天你给我的像是手环的东西竟然是一个小人，原谅我现在才发现！看着它圆圆的脑袋，深红色的外衣，以及可爱的用小球代替的小手小脚真是可爱极了！</p><p>你找到一颗石头要送我，其实看不出这个石头有多漂亮，也看不出它代表的含义，但是我知道这肯定是你很细心得挑选，所以很开心很开心！那天送你去机场提到成都，提到《傲寒》，看到你莫名得沉默，莫名得靠在我的肩上，我知道你在想他！我想要更了解你，想要知道你和他发生的故事，是什么原因让你如此沉默，所以我问了你心中的他是什么样子的，一个小胖子，肉嘟嘟的（原来他是你的初恋）！他追了你很长时间，当时，他可能很优秀，也很会疼你，你习惯了他的爱，甚至你都不了解他到底是一个什么样子的人，你只因他疼你，和他在一起有一种从来没有的安全感，所以你选择了接受。可是后来发生的事情让你无法忍受，更多的是伤痛，我不说了。</p><p>看着你的眼泪，我很难过，但难过中我有点开心！ 小胖子，你很不错，这么好的姑娘便宜了我。虽然现在我并不知道你对我的感受是出于对他思念还是真正的有点喜欢我，我不在乎，初恋本来就是很美好的，也是每个人深藏内心得那么柔光，永远无法忘记。就像我妈老讽刺我爸说他还无法忘记他的初恋一样，30年的过去了，他想起来仍然无法释怀！</p><p>对我来说，我心动了，因我看到了一个如此真实的你，你的笑，你的哭，你的每一句话都如此真实。喜欢你能对生活那么用心，对自己梦想如此执着，喜欢你能笑得那么开心！记得在大巴上，有一会你一直笑，看得我心都化了！我希望有一天全世界都反对你站在身边支持你的人是我，我希望能够用自己的方式让你永远都保持这样的笑！那我也做了个决定，在接下来的几个月一定更加认真得学习，只为在你成绩出来的那一刻我会根据你的选择来决定我的选择。别以为我没听见，你说你不想异地了，然后说下学期不见了！那我就不异地，至少我相信凭借自己的能力在任何地方都能生活的很好，我想待在你身边，听你的喜怒哀乐！</p><p>话有点多，假期准备学学素描，我要尽力画出最美的你，虽然我现在还不会素描～～～</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;/images/2.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;看到这张照片我就想笑，挺想给你拍照的人是我，这样我就会距离你更近点，可以看到你那闪闪发光的眼睛！想到还有好长时间才能见到你，我就心慌慌！你把照片发给我，那我就只能对着屏幕仔细寻找那颗已经成为一条线的亮晶晶的星星啦。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="日记" scheme="http://yoursite.com/categories/life/"/>
-    
     
   </entry>
   
