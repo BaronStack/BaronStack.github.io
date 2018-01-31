@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-01-31T03:42:01.000Z</updated>
+  <updated>2018-01-31T14:27:24.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2018-01-31</title>
+    <link href="http://yoursite.com/2018/01/31/2018-01-31/"/>
+    <id>http://yoursite.com/2018/01/31/2018-01-31/</id>
+    <published>2018-01-31T13:57:56.000Z</published>
+    <updated>2018-01-31T14:27:24.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>今天是2018年1月的最后一天，而今天有一场月全食。其实有的时候人最幸福的事情就是有一个可以共享快乐的人，看着月亮一点一点被地球的太阳折射投影覆盖，变成一轮红月亮，过程真的很神奇，这里是一个关于此次超级蓝月和月全食的描述文章<a href="http://www.shangc.net/news/2018/0131/00222673.html" target="_blank" rel="noopener">月全食</a>.<a id="more"></a>虽然她看不到有点可惜呀,不过当看到银白色的月光完全被覆盖的时候，我双手合十，用尽全身念力吸引宇宙能量的到来。</p><p>听说在这样的时刻许愿特别灵，而她看不到，给我了一个特权来帮她许愿。嗯嗯，哈哈，那我就许了第一个呢～</p><ul><li>希望糖永永同学能够取得一个满意的超级超级好的好成绩</li></ul><p>第二个～</p><ul><li>希望能够永远看着这个姑娘永远开开心心呢^_^</li></ul><p><img src="/images/yongyong/farPhoto.jpg" alt=""></p><p><img src="/images/yongyong/close.jpg" alt=""></p><p><img src="/images/yongyong/closePhoto.jpg" alt=""></p><p>她今天包饺子，然后给我看她的成果：</p><p><img src="/images/yongyong/jiaozi.jpg" alt=""></p><p>呐，我看了第一眼，吓我一跳，这饺子吃起来肯定特别累，隔着屏幕还是想尝一尝，她说特好吃。虽然外貌长得有点肥大，应该理解，毕竟从下午五点多就开始准备了，她包饺子的次数不多。不过说实话，我感觉我包的饺子肯定比她的好看，嘿嘿～ </p><p>明天就要回家啦，带回去了两个哑铃，我的素描装备，还有几本专业书，有点重，不过还好！</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;今天是2018年1月的最后一天，而今天有一场月全食。其实有的时候人最幸福的事情就是有一个可以共享快乐的人，看着月亮一点一点被地球的太阳折射投影覆盖，变成一轮红月亮，过程真的很神奇，这里是一个关于此次超级蓝月和月全食的描述文章&lt;a href=&quot;http://www.shangc.net/news/2018/0131/00222673.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;月全食&lt;/a&gt;.
+    
+    </summary>
+    
+      <category term="日记" scheme="http://yoursite.com/categories/life/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>C++面试问题准备：const和static关键字</title>
@@ -445,29 +465,6 @@
     
     
       <category term="machine learning" scheme="http://yoursite.com/tags/machine-learning/"/>
-    
-      <category term="python" scheme="http://yoursite.com/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python 中出现Non-ASCII character的解决办法</title>
-    <link href="http://yoursite.com/2018/01/17/Python-%E4%B8%AD%E5%87%BA%E7%8E%B0Non-ASCII-character%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/"/>
-    <id>http://yoursite.com/2018/01/17/Python-中出现Non-ASCII-character的解决办法/</id>
-    <published>2018-01-17T02:17:25.000Z</published>
-    <updated>2018-01-18T06:19:33.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>今天开始为深度学习的基础做准备，遇到python的一个编码问题：</p><p><img src="/images/Non-ASCII_Character.png" alt=""><a id="more"></a></p><p>python解释器脚本默认编码是ASCII码的形式，而你却输入了汉字，即将文件格式转换为utf-8的形式了，当下的解释器无法正确翻译这样的格式</p><p>解决办法：(在程序源文件<strong>开头</strong> 加上以下任意一个转码方式)</p><ul><li><p>#coding=uft-8</p></li><li><p>#_*<em>coding:UTF-8\</em>*_</p></li></ul><p>这样就可以愉快得输出想要的结果了</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;今天开始为深度学习的基础做准备，遇到python的一个编码问题：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/images/Non-ASCII_Character.png&quot; alt=&quot;&quot;&gt;
-    
-    </summary>
-    
-      <category term="python" scheme="http://yoursite.com/categories/python/"/>
-    
     
       <category term="python" scheme="http://yoursite.com/tags/python/"/>
     
