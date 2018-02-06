@@ -103,7 +103,7 @@
           <!-- Date -->
           <span class="date-time info">On
             <span class="date">2018-02-04</span>
-            <span class="time">22:20:22</span>
+            <span class="time">22:59:14</span>
           </span>
           
 
@@ -140,6 +140,9 @@
 </ul>
 <figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//上例中子类能够替换父类，而父类不能替换子类</span></span><br><span class="line">JisuanQi jsp=<span class="keyword">new</span> <span class="type">Add</span>(n1,n2);</span><br></pre></td></tr></table></figure>
 <p>这一思想体现为对继承机制的约束规范，只有子类能够替换基类时，才能保证系统在运行期内识别子类，这是保证继承复用的基础</p>
+<blockquote>
+<p>如果子类不能完整实现父类的方法，或者父类的某些方法在子类中已经发生”畸变”，则建议断开父子继承关系，采用依赖、聚集、组合等关系代替继承。正如上面的基类JisuanQi，若我们要实现一个功能为模拟大数运算，则该类就无法继承计算器类，那么只能采用组合了</p>
+</blockquote>
 <h3 id="依赖倒置原则（Dependecy-Inversion-Principle）"><a href="#依赖倒置原则（Dependecy-Inversion-Principle）" class="headerlink" title="依赖倒置原则（Dependecy-Inversion Principle）"></a>依赖倒置原则（Dependecy-Inversion Principle）</h3><ul>
 <li>依赖于抽象</li>
 </ul>
