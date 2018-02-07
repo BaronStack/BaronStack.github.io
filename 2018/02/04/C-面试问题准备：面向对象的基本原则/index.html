@@ -103,7 +103,7 @@
           <!-- Date -->
           <span class="date-time info">On
             <span class="date">2018-02-04</span>
-            <span class="time">22:59:14</span>
+            <span class="time">09:32:59</span>
           </span>
           
 
@@ -143,10 +143,15 @@
 <blockquote>
 <p>如果子类不能完整实现父类的方法，或者父类的某些方法在子类中已经发生”畸变”，则建议断开父子继承关系，采用依赖、聚集、组合等关系代替继承。正如上面的基类JisuanQi，若我们要实现一个功能为模拟大数运算，则该类就无法继承计算器类，那么只能采用组合了</p>
 </blockquote>
+<p><strong>最佳实践：在项目中采用liskov替换原则时尽量避免子类的”个性”，一旦子类有”个性”，这个子类和父类之间的关系就很难调和了，把子类当作父类使用，子类的”个性”被抹杀；把子类单独作为一个业务来使用，则会让代码间的耦合关系变得破朔迷离。</strong></p>
 <h3 id="依赖倒置原则（Dependecy-Inversion-Principle）"><a href="#依赖倒置原则（Dependecy-Inversion-Principle）" class="headerlink" title="依赖倒置原则（Dependecy-Inversion Principle）"></a>依赖倒置原则（Dependecy-Inversion Principle）</h3><ul>
-<li>依赖于抽象</li>
+<li>高层模块不应该依赖于底层模块，两者都应该依赖其<strong>抽象</strong></li>
+<li>抽象不应该依赖细节</li>
+<li>细节应该依赖抽象</li>
 </ul>
-<p>具体而言就是高层模块不依赖于底层模块，二者都同依赖于抽象；抽象不依赖于具体，具体依赖于抽象</p>
+<blockquote>
+<p>即可以理解为面向接口编程</p>
+</blockquote>
 <p>采用依赖倒置原则可以减少类间的耦合性，提高系统的稳定性，减少并发引起的风险，提高代码的可读性和可维护性</p>
 <h3 id="接口隔离原则（Interface-Segregation-Principle）"><a href="#接口隔离原则（Interface-Segregation-Principle）" class="headerlink" title="接口隔离原则（Interface-Segregation Principle）"></a>接口隔离原则（Interface-Segregation Principle）</h3><ul>
 <li>使用多个小的专门的接口，而不要使用一个大的总接口</li>
