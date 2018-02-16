@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-02-14T06:33:25.000Z</updated>
+  <updated>2018-02-16T15:11:38.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2018-02-16</title>
+    <link href="http://yoursite.com/2018/02/16/2018-02-16/"/>
+    <id>http://yoursite.com/2018/02/16/2018-02-16/</id>
+    <published>2018-02-16T15:05:27.000Z</published>
+    <updated>2018-02-16T15:11:38.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>今天是大年初一，昨天收到很多祝福，发送了很多祝福，哈哈 还是糖永永同学的祝福让我印象深刻:<font color="#DC143C">巴啦啦小魔仙蹦沙卡拉卡二哈跳狗年事业旺旺旺旺旺旺!</font></p><p>哈哈 我想只有她能想出这样的祝福了～ 开心的。。。<a id="more"></a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;今天是大年初一，昨天收到很多祝福，发送了很多祝福，哈哈 还是糖永永同学的祝福让我印象深刻:&lt;font color=&quot;#DC143C&quot;&gt;巴啦啦小魔仙蹦沙卡拉卡二哈跳狗年事业旺旺旺旺旺旺!&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;哈哈 我想只有她能想出这样的祝福了～ 开心的。。。
+    
+    </summary>
+    
+      <category term="日记" scheme="http://yoursite.com/categories/life/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>2018-02-14</title>
@@ -41,9 +62,9 @@
     <link href="http://yoursite.com/2018/02/11/markdown%E5%AD%97%E4%BD%93%E3%80%81%E5%AD%97%E5%8F%B7%E3%80%81%E5%AD%97%E4%BD%93%E9%A2%9C%E8%89%B2%E8%AE%BE%E7%BD%AE/"/>
     <id>http://yoursite.com/2018/02/11/markdown字体、字号、字体颜色设置/</id>
     <published>2018-02-11T13:06:37.000Z</published>
-    <updated>2018-02-11T13:23:00.000Z</updated>
+    <updated>2018-02-14T06:55:32.000Z</updated>
     
-    <content type="html"><![CDATA[<p>Markdown 是一种轻量级标记语言。<a id="more"></a>创始人为約翰·格魯伯（John Gruber）。它允许人们“使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML（或者HTML）文档”。这种语言吸收了很多在电子邮件中已有的纯文本标记的特性。</p><p>关于MarkDown的基础语法可以参考它的官方文档<a href="https://www.appinn.com/markdown/" target="_blank" rel="noopener">MarkDown语法说明（中文版）</a></p><p>这里说一下在用markdown写文档的时候如何设置字体颜色，字体大小以及字体形态。</p><p>在文本中添加\<font color="#ffffff">文本\</font>，这个就可以设置自己文本的颜色，关于具体文本颜色可以参考下图</p><p>设置字号同样\<font size="7">文本\</font>，这里一般浏览器默认的字号大小是3</p><p>设置字体形态同样\<font face="Adobe 黑体">文本\</font>，可以在face之后添加自己想要的形态.</p><blockquote><p>以上三者可以相互结合添加，对markdown中的文本进行设置</p></blockquote><p><img src="/images/fontColor.jpg" alt=""></p>]]></content>
+    <content type="html"><![CDATA[<p>Markdown 是一种轻量级标记语言。<a id="more"></a>创始人为約翰·格魯伯（John Gruber）。它允许人们“使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML（或者HTML）文档”。这种语言吸收了很多在电子邮件中已有的纯文本标记的特性。</p><p>关于MarkDown的基础语法可以参考它的官方文档<a href="https://www.appinn.com/markdown/" target="_blank" rel="noopener">MarkDown语法说明（中文版）</a><!--more--></p><p>这里说一下在用markdown写文档的时候如何设置字体颜色，字体大小以及字体形态。</p><p>在文本中添加\<font color="#ffffff" \="">文本\，这个就可以设置自己文本的颜色，关于具体文本颜色可以参考下图</font></p><p>设置字号同样\<font size="7\">文本\，这里一般浏览器默认的字号大小是3</font></p><p>设置字体形态同样\<font face="Adobe 黑体" \="">文本\，可以在face之后添加自己想要的形态.</font></p><blockquote><p>以上三者可以相互结合添加，对markdown中的文本进行设置</p></blockquote><p><img src="/images/fontColor.jpg" alt=""></p>]]></content>
     
     <summary type="html">
     
@@ -61,25 +82,20 @@
     <link href="http://yoursite.com/2018/02/11/C-%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98%E5%87%86%E5%A4%87%EF%BC%9ASTL-iterator/"/>
     <id>http://yoursite.com/2018/02/11/C-面试问题准备：STL-iterator/</id>
     <published>2018-02-11T12:53:12.000Z</published>
-    <updated>2018-02-11T13:37:14.000Z</updated>
+    <updated>2018-02-14T07:05:06.000Z</updated>
     
-    <content type="html"><![CDATA[<blockquote><p>这两天在家里没有好好读书，要反思一下。今天看《STL源码剖析》到了迭代器iterator这里</p></blockquote><h2 id="什么是迭代器"><a href="#什么是迭代器" class="headerlink" title="什么是迭代器"></a>什么是迭代器</h2><p>在《Design Patterns》中对迭代器模式的描述如下：<font color="#DC143C">提供一种方法，使之能够依序寻访某个聚合物（容器）所含的各个元素，而又无需暴露该聚合物内部表现方式</font></p><blockquote><p>这里小小的回忆下我们复习过的面向对象五大原则，显然该设计模式满足单一职责原则(<strong>对于迭代器来说只有元素地址能够引起它的变化</strong>)以及接口隔离(<strong>迭代器的设计就是为了访问数据元素，即访问接口</strong>)原则。详细请看<a href="https://baronstack.github.io/#/posts/C-面试问题准备：面向对象的基本原则" target="_blank" rel="noopener">面向对象基本原则</a></p></blockquote><p>观察如下代码：</p><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">template &lt;<span class="built_in">class</span> InputIterator,<span class="built_in">class</span> T&gt;</span><br><span class="line">InputIterator find (InputIterator <span class="keyword">first</span>,InputIterator <span class="keyword">last</span>,const T&amp; value) &#123;</span><br><span class="line">    <span class="keyword">while</span> (<span class="keyword">first</span> != <span class="keyword">last</span> &amp;&amp; *<span class="keyword">first</span> != value)</span><br><span class="line">        ++ <span class="keyword">first</span>;</span><br><span class="line"><span class="built_in">    return</span> <span class="keyword">first</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>这是一段find()函数的源码，显然我们能够发现，给予不同的迭代器，find函数便能够对不同的容器进行查找操作。</p>]]></content>
+    <content type="html"><![CDATA[<blockquote><p>这两天在家里没有好好读书，要反思一下。今天看《STL源码剖析》到了迭代器iterator这里</p></blockquote><h2 id="什么是迭代器"><a href="#什么是迭代器" class="headerlink" title="什么是迭代器"></a>什么是迭代器</h2><p>在《Design Patterns》中对迭代器模式的描述如下：<font color="#DC143C">提供一种方法，使之能够依序寻访某个聚合物（容器）所含的各个元素，而又无需暴露该聚合物内部表现方式</font> <a id="more"></a></p><blockquote><p>这里小小的回忆下我们复习过的面向对象五大原则，显然该设计模式满足单一职责原则(<strong>对于迭代器来说只有元素地址能够引起它的变化</strong>)以及接口隔离(<strong>迭代器的设计就是为了访问数据元素，即访问接口</strong>)原则。详细请看<a href="https://baronstack.github.io/#/posts/C-面试问题准备：面向对象的基本原则" target="_blank" rel="noopener">面向对象基本原则</a></p></blockquote><p>观察如下代码：</p><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">template &lt;<span class="built_in">class</span> InputIterator,<span class="built_in">class</span> T&gt;</span><br><span class="line">InputIterator find (InputIterator <span class="keyword">first</span>,InputIterator <span class="keyword">last</span>,const T&amp; value) &#123;</span><br><span class="line">    <span class="keyword">while</span> (<span class="keyword">first</span> != <span class="keyword">last</span> &amp;&amp; *<span class="keyword">first</span> != value)</span><br><span class="line">        ++ <span class="keyword">first</span>;</span><br><span class="line"><span class="built_in">    return</span> <span class="keyword">first</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>这是一段find()函数的源码，显然我们能够发现，给予不同的迭代器，find函数便能够对不同的容器进行查找操作。</p>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;blockquote&gt;
+      &lt;blockquote&gt;
 &lt;p&gt;这两天在家里没有好好读书，要反思一下。今天看《STL源码剖析》到了迭代器iterator这里&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&quot;什么是迭代器&quot;&gt;&lt;a href=&quot;#什么是迭代器&quot; class=&quot;headerlink&quot; title=
-      
+&lt;h2 id=&quot;什么是迭代器&quot;&gt;&lt;a href=&quot;#什么是迭代器&quot; class=&quot;headerlink&quot; title=&quot;什么是迭代器&quot;&gt;&lt;/a&gt;什么是迭代器&lt;/h2&gt;&lt;p&gt;在《Design Patterns》中对迭代器模式的描述如下：&lt;font color=&quot;#DC143C&quot;&gt;提供一种方法，使之能够依序寻访某个聚合物（容器）所含的各个元素，而又无需暴露该聚合物内部表现方式&lt;/font&gt;
     
     </summary>
     
-      <category term="C++" scheme="http://yoursite.com/categories/C/"/>
-    
-      <category term="面试" scheme="http://yoursite.com/categories/C/%E9%9D%A2%E8%AF%95/"/>
+      <category term="面试" scheme="http://yoursite.com/categories/%E9%9D%A2%E8%AF%95/"/>
     
     
       <category term="C++" scheme="http://yoursite.com/tags/C/"/>
@@ -458,27 +474,6 @@
     <summary type="html">
     
       &lt;h5 id=&quot;向死而生：我修的死亡学分—–李开复&quot;&gt;&lt;a href=&quot;#向死而生：我修的死亡学分—–李开复&quot; class=&quot;headerlink&quot; title=&quot;向死而生：我修的死亡学分—–李开复&quot;&gt;&lt;/a&gt;向死而生：我修的死亡学分—–李开复&lt;/h5&gt;&lt;p&gt;昨天晚上开始读这本书，内心一直很纠结。
-    
-    </summary>
-    
-      <category term="日记" scheme="http://yoursite.com/categories/life/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>2018-01-24</title>
-    <link href="http://yoursite.com/2018/01/24/2018-01-24/"/>
-    <id>http://yoursite.com/2018/01/24/2018-01-24/</id>
-    <published>2018-01-24T12:40:04.000Z</published>
-    <updated>2018-01-24T13:19:37.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>今天我看到了西安本年度的第一场雪，柔和而又不失优雅。</p><p><img src="/images/FirstSnowIn2018.jpg" alt=""><a id="more"></a></p><p>老师今天给我指点了开题报告，嗯，问题还挺多的。但是我个人实在没法用心去做这个感觉没什么用的开题报告，不就是一个毕业论文的准备嘛，我想不通为什么要花费这么大的精力去搞这个开题报告呢。</p><p>老师用他最擅长的股票黑屏软件给我分析股市动向，当然个人觉得这个东西如果能好好钻研一番以后对理财肯定有大用，不过目前我是没什么太大的兴趣，目前我的学习重点是为了一份好的工作，所以基础的知识得搞懂，还得把Tensorflow相关内容好好学学，这样下学期的比赛如果可以的话说不定还能够拿一些奖励。</p><p>对于股票这里实在是没法兴趣驱动了，而且老师真的是好啰嗦，你说你问题说完了好吧，为什么还要给我讲一些你也不是很擅长的东西，而且没有很强的逻辑，让我们双方都这么辛苦，你嗓子疼，我也耳朵累。</p><p>元谋竟然这么暖呀，天气还特好，那里真的是很舒服的一个地方呢。躺在吊床上，看着星星，感受着带有植物香味的微风吹过耳旁、发梢，然后在鼻梁停一会，轻轻得钻进了我的鼻孔-^_^-。那我就安静得做个美男子，当然旁边有美人陪就更好啦。</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;今天我看到了西安本年度的第一场雪，柔和而又不失优雅。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/images/FirstSnowIn2018.jpg&quot; alt=&quot;&quot;&gt;
     
     </summary>
     
