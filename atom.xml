@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-02-22T12:54:00.000Z</updated>
+  <updated>2018-02-22T14:00:14.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2018-02-22</title>
+    <link href="http://yoursite.com/2018/02/22/2018-02-22/"/>
+    <id>http://yoursite.com/2018/02/22/2018-02-22/</id>
+    <published>2018-02-22T13:25:27.000Z</published>
+    <updated>2018-02-22T14:00:14.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近她回到她爹的老家啦—昭通，這還是她22年來第一次和爸爸回到老家，真的是很難得！<br>雖然信號不是很好，但是能夠看到那裏是個很安靜的地方，山很多，綿延不絕，遠處有朦朦朧朧的霧遮擋著若隱若現的群山！這個場景讓我想起了小佛在《苗疆蠱事》中對青山界的描述，十萬里大山！   <a id="more"></a><br>然後她奮勇得爬上了其中一座山，叫做觀音岩。遙望遠處大山，長舒一口氣，她發出了一聲感慨：<font color="#DC143C"><strong>我願此生遼闊高遠！</strong></font> 嗯，我看到之後默默得點了一個讚，支持你喔！^_^希望能夠帶你看變世間群山，讓你每一次的感慨都更高更遠！</p><p>然後又看到她門那裡的特色美食，什麼百花蜂蜜、還有滿滿（姑姑）做的米酒糖水雞蛋、還有酸笋烏雞鍋。滿滿得舌尖上的中國，看得我食慾大發！</p><p><img src="/images/yongyong/honey.jpg" alt="百花蜂蜜"></p><p><img src="/images/yongyong/chicken.jpg" alt="米酒糖水鸡蛋"></p><p><img src="/images/yongyong/water.jpg" alt="酸笋乌鸡锅"></p><p>糖小可怜被姐姐妈妈欺负了，睡觉的时候从一个小球被强行拉成一个树干，哎，可怜的小家伙在被强迫睡觉，过程中醒来了三次！最后产生的结果就是腰疼～～～心疼～～～</p><p>就快要开学了，过几天就要去学校了。很开心，自从2018.1.11之后一天比一天更想她，感觉到她开心我就很开心，她难过就有点不知所措！想到马上就能见到她，我就无比激动，不过最近有一件让我无比沮丧难过的事情，我。。。我把她送我的小人给弄丢啦,fuck!平时都随身携带，最近穿的衣服兜特别浅，出去玩的时候没有注意，拿出来看完之后装进去没有装好，可能掉出来了！气死我了，还回去找了好几次，愤怒啊！好可爱的一个小人，难过死了！</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近她回到她爹的老家啦—昭通，這還是她22年來第一次和爸爸回到老家，真的是很難得！&lt;br&gt;雖然信號不是很好，但是能夠看到那裏是個很安靜的地方，山很多，綿延不絕，遠處有朦朦朧朧的霧遮擋著若隱若現的群山！這個場景讓我想起了小佛在《苗疆蠱事》中對青山界的描述，十萬里大山！
+    
+    </summary>
+    
+      <category term="日记" scheme="http://yoursite.com/categories/life/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>C++面试问题准备：辨认大小端以及系统位数</title>
@@ -70,7 +90,7 @@
     <link href="http://yoursite.com/2018/02/16/2018-02-16/"/>
     <id>http://yoursite.com/2018/02/16/2018-02-16/</id>
     <published>2018-02-16T15:05:27.000Z</published>
-    <updated>2018-02-22T12:54:00.000Z</updated>
+    <updated>2018-02-22T13:27:10.000Z</updated>
     
     <content type="html"><![CDATA[<p>今天是大年初一，昨天收到很多祝福，发送了很多祝福，哈哈 还是糖永永同学的祝福让我印象深刻:<font color="#DC143C">巴啦啦小魔仙蹦沙卡拉卡二哈跳狗年事业旺旺旺旺旺旺!</font></p><p>哈哈 我想只有她能想出这样的祝福了～ 开心的。。。<a id="more"></a></p>]]></content>
     
@@ -449,30 +469,6 @@
       <category term="C++" scheme="http://yoursite.com/categories/C/"/>
     
       <category term="面试" scheme="http://yoursite.com/categories/C/%E9%9D%A2%E8%AF%95/"/>
-    
-    
-      <category term="C++" scheme="http://yoursite.com/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>C++开发面试问题</title>
-    <link href="http://yoursite.com/2018/01/26/C-%E5%BC%80%E5%8F%91%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98/"/>
-    <id>http://yoursite.com/2018/01/26/C-开发面试问题/</id>
-    <published>2018-01-26T14:47:27.000Z</published>
-    <updated>2018-02-22T12:54:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h4 id="语言基础"><a href="#语言基础" class="headerlink" title="语言基础"></a>语言基础</h4><ul><li>OOP（封装、继承、多态） + V func 的实现，V table 的原理</li><li>const static的各种情况，分清const pointer 和pointer to const以及两者合体的形式<a id="more"></a></li><li>内存泄漏 三条规则。注意exception safe和smart pointer（提到思想：谁拥有这个指针）的解决方式</li><li>STL 至少了解allocator，常用的一些容器以及其实现原理</li><li>rail 了解一下，用来做什么</li></ul><h4 id="操作系统"><a href="#操作系统" class="headerlink" title="操作系统"></a>操作系统</h4><ul><li>进程管理 <ol><li>什么是进程</li><li>什么是context switch（上下文相关），干什么会触发它</li><li>cost是什么</li><li>虚拟内存和物理内存是什么</li><li>进程竞争的条件</li></ol></li><li>文件系统<ol><li>MVC 了解</li><li>堆栈的区别，给一个程序，要能够画出内存里程序运行的经过</li><li>并发编程，了解.管道的概念</li><li>cpu cache的运作，为什么很多数据结构或算法很好，运行却很慢</li><li>动态链接和静态链接的优缺点</li><li>编译的过程，从complie到linking. 做的事情</li><li>如何避免环形依赖</li></ol></li></ul><h4 id="编程习惯"><a href="#编程习惯" class="headerlink" title="编程习惯"></a>编程习惯</h4><ul><li>敏捷开发要了解，至少知道过程中有那些阶段code review,以及测试流程</li><li>如何manage大型C++code,怎么分模块合理得继承，怎么分模块测试</li><li>template以及metaprogramming了解</li><li>现场写程序能加const就加const,小程序全inline,能传ref就传ref,开头一定要有哨兵#ifndef #define #endif</li><li>出手要有namespace</li><li>STL能用就用，tranform的使用以及自己会写comparator</li></ul><h4 id="基础数据结构以及算法—-《剑指-offer》《编程之美》《程序员面试指南》内容搞懂足够面对BAT"><a href="#基础数据结构以及算法—-《剑指-offer》《编程之美》《程序员面试指南》内容搞懂足够面对BAT" class="headerlink" title="基础数据结构以及算法—-《剑指 offer》《编程之美》《程序员面试指南》内容搞懂足够面对BAT"></a>基础数据结构以及算法—-《剑指 offer》《编程之美》《程序员面试指南》内容搞懂足够面对BAT</h4>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h4 id=&quot;语言基础&quot;&gt;&lt;a href=&quot;#语言基础&quot; class=&quot;headerlink&quot; title=&quot;语言基础&quot;&gt;&lt;/a&gt;语言基础&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;OOP（封装、继承、多态） + V func 的实现，V table 的原理&lt;/li&gt;
-&lt;li&gt;const static的各种情况，分清const pointer 和pointer to const以及两者合体的形式
-    
-    </summary>
-    
-      <category term="面试" scheme="http://yoursite.com/categories/%E9%9D%A2%E8%AF%95/"/>
     
     
       <category term="C++" scheme="http://yoursite.com/tags/C/"/>
