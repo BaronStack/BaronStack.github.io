@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-02-26T16:07:24.000Z</updated>
+  <updated>2018-02-27T15:58:02.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2018-02-27</title>
+    <link href="http://yoursite.com/2018/02/27/2018-02-27/"/>
+    <id>http://yoursite.com/2018/02/27/2018-02-27/</id>
+    <published>2018-02-27T15:31:50.000Z</published>
+    <updated>2018-02-27T15:58:02.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近脑袋处于紧绷状态，随着春招的临近，北京的相关公司招聘信息发来很多。投了几家较为中意公司的简历，同时自己也铆足精神全心准备笔试和面试。<a id="more"></a></p><p>同时最近在读书的时候努力提升自己的结构化思维能力，让自己在准备过程中梳理的知识更加由条理，方便记忆！</p><p>看着手机里海信多媒体研发中心的新员工群，默默得退了出去，青岛：以后可以去旅游！</p><p>很开心她即将到学校，这样就能每天见到她了！莫名开心！她竟然不说她什么时候到学校，凭借我机制的头脑一下子就从购票网站上搜出她的车次以及到达时间，看着31个小时的车程，这是真心很累,记得以前做了一个29小时去上海的火车，那都快要崩溃了，满脸油光，还顶着一个油头下了车，仿佛自己有一个月没有洗脸洗头洗澡，痛苦如斯！</p><p>附一张她手机里我们聊天背景图：(虽然还是不太懂背景图的含义,以后应该会懂吧)</p><p><img src="/images/yongyong/小黄花.jpg" alt=""></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近脑袋处于紧绷状态，随着春招的临近，北京的相关公司招聘信息发来很多。投了几家较为中意公司的简历，同时自己也铆足精神全心准备笔试和面试。
+    
+    </summary>
+    
+      <category term="日记" scheme="http://yoursite.com/categories/life/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>C++面试问题准备：linux cpu、系统性能调试相关命令</title>
@@ -435,33 +455,6 @@
     
       &lt;h2 id=&quot;常量-（const）&quot;&gt;&lt;a href=&quot;#常量-（const）&quot; class=&quot;headerlink&quot; title=&quot;常量 （const）&quot;&gt;&lt;/a&gt;常量 （const）&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;const类型值不能被修改，这里指的是const修饰的内容不能被修改，且const修饰的常量在超出其作用域之后会被释放
-    
-    </summary>
-    
-      <category term="面试" scheme="http://yoursite.com/categories/%E9%9D%A2%E8%AF%95/"/>
-    
-    
-      <category term="C++" scheme="http://yoursite.com/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>C++ 面试问题准备：内存分配的方式</title>
-    <link href="http://yoursite.com/2018/01/30/C-%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98%E5%87%86%E5%A4%87%EF%BC%9A%E5%86%85%E5%AD%98%E5%88%86%E9%85%8D%E7%9A%84%E6%96%B9%E5%BC%8F/"/>
-    <id>http://yoursite.com/2018/01/30/C-面试问题准备：内存分配的方式/</id>
-    <published>2018-01-30T12:16:57.000Z</published>
-    <updated>2018-02-22T12:54:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="C-中常见内存分配及其存储区域有以下几种"><a href="#C-中常见内存分配及其存储区域有以下几种" class="headerlink" title="C++ 中常见内存分配及其存储区域有以下几种"></a>C++ 中常见内存分配及其存储区域有以下几种</h3><ul><li>堆分配</li><li>栈分配</li><li>自由存储区</li><li>静态存储区</li><li>常量存储区<a id="more"></a></li></ul><p>这里首先描述以下除了堆和栈的三种存储方式：</p><h4 id="自由存储区"><a href="#自由存储区" class="headerlink" title="自由存储区"></a>自由存储区</h4><p>这个存储区是单独为C++ 中<code>new</code>运算符提出来的，该存储区是<code>new</code>和<code>delete</code>动态分配和释放对象的抽象概念。在《STL 源码剖析中》自由存储区是利用allocate空间配置器进行STL操作对象的空间分配，通过allocate ,deallocate,construct,destroy进行空间的分配和释放。详细可以参考文章<a href="http://vigortyy.com/2018/01/27/C-开发面试准备：STL-allocator/" target="_blank" rel="noopener">STL allocator</a></p><blockquote><p>别将自由存储区与堆分配等价，堆是由操作系统进行维护的一片内存区域</p></blockquote><h4 id="静态存储区"><a href="#静态存储区" class="headerlink" title="静态存储区"></a>静态存储区</h4><p>全局变量和静态变量的存储是放在同一块区域，初始化的静态变量和全局变量在一块，未初始化的在另一块，程序运行结束后由系统自动释放。</p><h4 id="常量存储区"><a href="#常量存储区" class="headerlink" title="常量存储区"></a>常量存储区</h4><p>这是一块比较特殊的存储区，是固化在执行文件上的数据，里面存放的是常量，不允许被修改。</p><p><strong>接下来我们看看堆和栈的区别</strong></p><ol><li><p>内存分配：</p><p> 堆：一般由程序员分配释放，若程序员不释放，程序结束后会由操作系统进行释放（这里主要是指局部变量使用堆分配的方式）。它的分配方式类似与链表，常用的关键字是：malloc,free</p><p> 栈：由系统自动飞配，结束后系统自动释放（局部变量）</p></li><li><p>申请方式：</p><p> 堆：需要程序员自己申请，并指明大小。</p><p> 栈：系统自动分配</p></li><li><p>大小限制：</p><p> 堆：是向高地址扩展的数据结构，是不连续的内存区域。这是由于系统是用链表来存储的空闲内存地址的，自然是不连续的，而链表的遍历方向是由低地址向高地址。堆的大小受限于计算机系统中有效的虚拟内存。由此可见，堆获得的空间比较灵活，也比较大</p><p> 栈：在Windows下, 栈是向低地址扩展的数据结构，是一块连续的内存的区域。栈的大小是固定的（是一个编译时就确定的常数），如果申请的空间超过栈的剩余空间时，将提示overflow。因此，能从栈获得的空间较小。</p></li><li><p>效率方面：</p><p> 堆：分配空间需要使用malloc以及用free释放，这个过程需要调用操作系统的函数，由操作系统通过一定的内存分配算法分配空间，最后才由汇编器翻译为指令执行，效率较低。但是会造成大量的内存碎片，如果不合理进行释放，会导致系统运行缓慢甚至崩溃</p><p> 栈：栈是机器系统的数据结构，由与在操作系统中有栈操作的指令，所以执行起来较快。</p></li><li><p>存放内容方面：</p><p> 堆：一般情况堆顶使用一个字节的空间来存放堆的大小，而堆中具体存放内容是由程序员来完成的</p><p> 栈：栈存放的内容，一般来说是函数地址和相关参数。</p><blockquote><p>这里关于在栈中，函数调用过程栈帧的变化大家可以参考这篇文章<a href="http://blog.csdn.net/qq_29403077/article/details/53205010" target="_blank" rel="noopener">函数调用过程栈帧变化详解</a>.<strong>总之就是将控制进行跳转，同时对于控制中用到的变量以及函数地址分配相应的栈空间。</strong></p></blockquote></li></ol><p>这里是一些外国人的博客对于堆栈的描述</p><p><a href="http://www.learncpp.com/cpp-tutorial/79-the-stack-and-the-heap/" target="_blank" rel="noopener">The stack and the heap</a></p><p><a href="https://salilkapur.wordpress.com/2013/04/11/stack-memory-vs-heap-memory-in-cc/" target="_blank" rel="noopener">STACK MEMORY VS HEAP MEMORY IN C/C++</a></p><p>个人感觉写的比较浅，当然常用到的主要区别都写到了</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;C-中常见内存分配及其存储区域有以下几种&quot;&gt;&lt;a href=&quot;#C-中常见内存分配及其存储区域有以下几种&quot; class=&quot;headerlink&quot; title=&quot;C++ 中常见内存分配及其存储区域有以下几种&quot;&gt;&lt;/a&gt;C++ 中常见内存分配及其存储区域有以下几种&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;堆分配&lt;/li&gt;
-&lt;li&gt;栈分配&lt;/li&gt;
-&lt;li&gt;自由存储区&lt;/li&gt;
-&lt;li&gt;静态存储区&lt;/li&gt;
-&lt;li&gt;常量存储区
     
     </summary>
     
