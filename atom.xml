@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-03-03T06:19:00.000Z</updated>
+  <updated>2018-03-04T06:42:14.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>C++面试问题总结：指针和引用的区别</title>
+    <link href="http://yoursite.com/2018/03/04/C-%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93%EF%BC%9A%E6%8C%87%E9%92%88%E5%92%8C%E5%BC%95%E7%94%A8%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
+    <id>http://yoursite.com/2018/03/04/C-面试问题总结：指针和引用的区别/</id>
+    <published>2018-03-04T05:50:38.000Z</published>
+    <updated>2018-03-04T06:42:14.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="指针和引用的区别"><a href="#指针和引用的区别" class="headerlink" title="指针和引用的区别"></a>指针和引用的区别</h3><blockquote><p>指针和引用都代表的是地址</p></blockquote><ul><li><strong>引用</strong>需要指向某些对象，但是你可以声明指针变量为空，然后将引用指向该指针变量。</li></ul><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">char</span> <span class="meta">*pc</span> <span class="string">=</span> <span class="literal">NULL</span><span class="string">;</span></span><br><span class="line"><span class="string">char</span> <span class="meta">&amp;rc</span> <span class="string">=</span> <span class="string">*pc;</span></span><br></pre></td></tr></table></figure><a id="more"></a><ul><li>因为引用肯定会指向一个对象，因此必须初始化，其实和１是一回事。指针无此限制，但是，其实指针的未初始化，过不了coverity这些工具的检测。</li><li>指针可以重新赋值，引用不可以，初始化后就不可改变:即不可以通过以更改指针的方式来更改引用的值，即直接对已经初始化的引用赋值。</li><li>sizeof结果不同，指针返回的是指针本身大小，引用返回的是引用对象的大小:如果是指针的话，一般指针大小是4B，引用返回的大小是引用对象的大小，这样就可能因为对象类型不同而不同。</li><li>引用不需要占用空间。</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;指针和引用的区别&quot;&gt;&lt;a href=&quot;#指针和引用的区别&quot; class=&quot;headerlink&quot; title=&quot;指针和引用的区别&quot;&gt;&lt;/a&gt;指针和引用的区别&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;指针和引用都代表的是地址&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;引用&lt;/strong&gt;需要指向某些对象，但是你可以声明指针变量为空，然后将引用指向该指针变量。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight yaml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;meta&quot;&gt;*pc&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;literal&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;string&quot;&gt;;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;meta&quot;&gt;&amp;amp;rc&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;*pc;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+      <category term="面试" scheme="http://yoursite.com/categories/%E9%9D%A2%E8%AF%95/"/>
+    
+    
+      <category term="C++" scheme="http://yoursite.com/tags/C/"/>
+    
+  </entry>
   
   <entry>
     <title>2018-03-02</title>
@@ -442,26 +470,6 @@
     
       &lt;p&gt;今天是个好日子，凌晨的时候陕西省的考研成绩陆续都出来啦，而我看到身边的同学都对自己的成绩很满意，内心真的替他们开心。一张舍友12：00还在奋笔疾书的照片：&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/images/tianci.jpg&quot; alt=&quot;&quot;&gt;
-    
-    </summary>
-    
-      <category term="日记" scheme="http://yoursite.com/categories/life/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>2018-02-01</title>
-    <link href="http://yoursite.com/2018/02/01/2018-02-01/"/>
-    <id>http://yoursite.com/2018/02/01/2018-02-01/</id>
-    <published>2018-02-01T11:33:08.000Z</published>
-    <updated>2018-02-22T12:54:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>今天提着接近40公斤（25公斤的哑铃）的行李箱艰难回到了家，重点是在火车上一个无意识的打招呼，竟发现身边的年轻大哥是长安大学土木工程专业的研究生学长。<a id="more"></a>然后就与他相谈甚欢，从大学的点点滴滴到走上社会的艰难挫折，从行业发展到现在自身行业的举步维艰，学长给我讲了很多大学应该做的事情以及需要提升的能力。真的发现我们需要走的路还很长，每一步选择或多或少会对你的未来产生影响。不过还是像我的人生定位一样，珍惜所有，绝对专注，活在当下。</p><p>晚上和妹妹看了《小王子》电影，感触颇多，快乐其实很简单，只是随着年龄的增长我们选择去忘记而已，为了迎合社会的需求选择放弃内心的那份纯真。终于知道了为什么小永永同学对小王子是如此痴迷呢！</p><p>从明天开始就要进行素描学习，很期待一个月后自己的作品呢～</p><p>此外随着成绩出来时间的临近，真的很紧张，相信她的成绩一定很高呢，我的许的愿望一定能成功的！</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;今天提着接近40公斤（25公斤的哑铃）的行李箱艰难回到了家，重点是在火车上一个无意识的打招呼，竟发现身边的年轻大哥是长安大学土木工程专业的研究生学长。
     
     </summary>
     
