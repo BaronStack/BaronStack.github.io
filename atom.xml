@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-03-04T10:40:12.000Z</updated>
+  <updated>2018-03-05T07:05:38.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,69 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2018-03-04</title>
+    <link href="http://yoursite.com/2018/03/04/2018-03-04/"/>
+    <id>http://yoursite.com/2018/03/04/2018-03-04/</id>
+    <published>2018-03-04T15:46:13.000Z</published>
+    <updated>2018-03-05T07:05:38.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>我和她不在一块的时间老想她，很想很想。结果今天中午回到学校，她竟然在我们学校学习，所以：<a id="more"></a><br>今天和糖永永同学呆在一块的时间大概有8个小时，这是一种很独特的感觉。<br>我们一起学习，她在看专八，我在总结面试笔记。我看看她，她看看我，莫名开心兴奋，当然对于我来说还真好，越看她越喜欢，然而她老不让我看她，其中有一个原因是她脸上有了一些小痘痘。</p><p>晚上回学校的时候，一路上沉默的时间很多，但并不是那种无话可说，而是发自内心的不想说话。结果她提到了以前和小胖子的相处方式，小胖子应该是属于那种非常能说话的，而且说的很好的那种。突然我内心有点失落，我发现我对她一点也不了解了，我又不知道她心里怎么想的了，她的内心还是很难受，她又很想他了，我不知道怎么对她说，因为我不了解，而且我个人属于那种现实生活中聊天很差的那种人，无法很清晰正确得表达自己想要表的东西。<br>就这样相处吧，还是希望能够对她以前的生活更了解一点！晚安啦！</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;我和她不在一块的时间老想她，很想很想。结果今天中午回到学校，她竟然在我们学校学习，所以：
+    
+    </summary>
+    
+      <category term="日记" scheme="http://yoursite.com/categories/life/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>C++面试问题准备：多线程还是多进程的选择以及区别</title>
+    <link href="http://yoursite.com/2018/03/04/C-%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98%E5%87%86%E5%A4%87%EF%BC%9A%E5%A4%9A%E7%BA%BF%E7%A8%8B%E8%BF%98%E6%98%AF%E5%A4%9A%E8%BF%9B%E7%A8%8B%E7%9A%84%E9%80%89%E6%8B%A9%E4%BB%A5%E5%8F%8A%E5%8C%BA%E5%88%AB/"/>
+    <id>http://yoursite.com/2018/03/04/C-面试问题准备：多线程还是多进程的选择以及区别/</id>
+    <published>2018-03-04T12:27:20.000Z</published>
+    <updated>2018-03-05T06:38:37.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="进程和线程的区别"><a href="#进程和线程的区别" class="headerlink" title="进程和线程的区别"></a>进程和线程的区别</h2><ul><li>一个进程由一个或多个线程组成，线程是一个进程中代码的不同执行路线；</li><li>进程之间相互独立，但同一进程下的各个线程之间共享程序的内存空间(包括代码段、数据集、堆等)及一些进程级的资源(如打开文件和信号)，某进程内的线程在其它进程不可见</li><li>调度和切换：线程上下文切换比进程上下文切换要快得多</li></ul><p><strong>进程几种状态</strong>：</p><p>创建态：进程正在创建，操作系统在创建进程时要进行的工作包括分配和建立进程控制块表项、建立资源表格并分配资源、加载程序并建立地址空间。</p><p>就绪态：时间片被用完，此线程被强制暂停，等待下一个属于它的时间片到来</p><p>运行态：此线程正在执行，正在占用时间片</p><p>阻塞：也叫等待状态，等待某一事件（如IO或另一个线程）执行完</p><p>退出：进程已结束，所以也称结束状态，释放操作系统分配的资源。</p><p><strong>线程几种状态</strong>：</p><p>创建：一个新的线程被创建，等待该线程被调用执行  </p><p>就绪：时间片已用完，此线程被强制暂停，等待下一个属于他的时间片到来  </p><p>运行：此线程正在执行，正在占用时间片  </p><p>阻塞：也叫等待状态，等待某一事件(如IO或另一个线程)执行完  </p><p>退出：一个线程完成任务或者其他终止条件发生，该线程终止进入退出状态，退出状态释放该线程所分配的资源</p><blockquote><p><strong><font color="#DC143C">线程共享的资源</font></strong>:<br> a. 堆：堆是在进程空间中开辟出来的，所以它是理所当然地被共享的。因此由malloc和new出来的都是共享的<br> b. 全局变量：它是与具体某一函数无关的，所以也与特定线程无关；因此也是共享的<br> c. 静态变量：即使是局部变量，在该局部变量存在的函数对于整个程序生存期间只有一份拷贝；因此也是共享的<br> d. 文件等公用资源：这个是共享的，使用这些公共资源的线程必须同步。windows下存在的几种线程同步资源的方式：信号、临界区、事件、互斥体<br> <strong><font color="#DC143C">线程独享的资源</font></strong>:<br> a. 线程ID:每个线程都有自己的线程ID，这个ID在本进程中是唯一的。进程用此来标识线程。<br> b. 寄存器组的值:由于线程间是并发运行的，每个线程有自己不同的运行线索，当从一个线程切换到另一个线程上时，必须将原有的线程的寄存器集合的状态保存，以便将来该线程在被重新切换到时能得以恢复。<br> c. 线程的堆栈:<font color="#DC143C">堆栈是保证线程独立运行所必须的.</font>线程函数可以调用函数，而被调用函数中又是可以层层嵌套的，所以线程 必须拥有自己的函数堆栈，使得函数调用可以正常执行，不受其他线程的影响。<br> d. 错误返回码:由于同一个进程中有很多个线程在同时运行，可能某个线程进行系统调用 后设置了errno值，而在该线程还没有处理这个错误，另外一个线程就在此时被调度器投入运行，这样错误值就有可能被修改<br> e. 线程的信号屏蔽码:由于每个线程所感兴趣的信号不同，所以线程的信号屏蔽码应该由线程自己管理。但所有的线程都共享同样的信号处理器<br> f. 线程的优先级:由于线程需要像进程那样能够被调度，那么就必须要有可供调度使用的参数，这个参数就是线程的优先级</p></blockquote><h2 id="多进程-和多线程的区别"><a href="#多进程-和多线程的区别" class="headerlink" title="多进程 和多线程的区别"></a>多进程 和多线程的区别</h2><blockquote><p>进程是资源分配的最小单位，线程是CPU调度的最小单位。 <a id="more"></a></p></blockquote><p>关于多进程和多线程的区别可以参考如下图：</p><p><img src="/images/moreIPC.png" alt=""></p><h2 id="多进程和多线程的选择"><a href="#多进程和多线程的选择" class="headerlink" title="多进程和多线程的选择"></a>多进程和多线程的选择</h2><p><strong><font color="#DC143C">需频繁创建销毁的优先用线程</font></strong></p><p>这种原则最常见的应用就是Web服务器了，来一个连接建立一个线程，断了就销毁线程，要是用进程，创建和销毁的代价是很难承受的</p><p><strong><font color="#DC143C">需要进行大量计算的优先使用线程</font></strong></p><p>大量计算当然就是要耗费很多CPU，切换频繁了，这种情况下线程是最合适的，一般应用在：图像处理和算法处理。</p><p><strong><font color="#DC143C">强相关的处理用线程，弱相关的处理用进程</font></strong></p><p>一般的Server需要完成如下任务：消息收发、消息处理。“消息收发”和“消息处理”就是弱相关的任务，而“消息处理”里面可能又分为“消息解码”、“业务处理”，这两个任务相对来说相关性就要强多了。因此“消息收发”和“消息处理”可以分进程设计，“消息解码”、“业务处理”可以分线程设计。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;进程和线程的区别&quot;&gt;&lt;a href=&quot;#进程和线程的区别&quot; class=&quot;headerlink&quot; title=&quot;进程和线程的区别&quot;&gt;&lt;/a&gt;进程和线程的区别&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;一个进程由一个或多个线程组成，线程是一个进程中代码的不同执行路线；&lt;/li&gt;
+&lt;li&gt;进程之间相互独立，但同一进程下的各个线程之间共享程序的内存空间(包括代码段、数据集、堆等)及一些进程级的资源(如打开文件和信号)，某进程内的线程在其它进程不可见&lt;/li&gt;
+&lt;li&gt;调度和切换：线程上下文切换比进程上下文切换要快得多&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;进程几种状态&lt;/strong&gt;：&lt;/p&gt;
+&lt;p&gt;创建态：进程正在创建，操作系统在创建进程时要进行的工作包括分配和建立进程控制块表项、建立资源表格并分配资源、加载程序并建立地址空间。&lt;/p&gt;
+&lt;p&gt;就绪态：时间片被用完，此线程被强制暂停，等待下一个属于它的时间片到来&lt;/p&gt;
+&lt;p&gt;运行态：此线程正在执行，正在占用时间片&lt;/p&gt;
+&lt;p&gt;阻塞：也叫等待状态，等待某一事件（如IO或另一个线程）执行完&lt;/p&gt;
+&lt;p&gt;退出：进程已结束，所以也称结束状态，释放操作系统分配的资源。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;线程几种状态&lt;/strong&gt;：&lt;/p&gt;
+&lt;p&gt;创建：一个新的线程被创建，等待该线程被调用执行  &lt;/p&gt;
+&lt;p&gt;就绪：时间片已用完，此线程被强制暂停，等待下一个属于他的时间片到来  &lt;/p&gt;
+&lt;p&gt;运行：此线程正在执行，正在占用时间片  &lt;/p&gt;
+&lt;p&gt;阻塞：也叫等待状态，等待某一事件(如IO或另一个线程)执行完  &lt;/p&gt;
+&lt;p&gt;退出：一个线程完成任务或者其他终止条件发生，该线程终止进入退出状态，退出状态释放该线程所分配的资源&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;&lt;font color=&quot;#DC143C&quot;&gt;线程共享的资源&lt;/font&gt;&lt;/strong&gt;:&lt;br&gt; a. 堆：堆是在进程空间中开辟出来的，所以它是理所当然地被共享的。因此由malloc和new出来的都是共享的&lt;br&gt; b. 全局变量：它是与具体某一函数无关的，所以也与特定线程无关；因此也是共享的&lt;br&gt; c. 静态变量：即使是局部变量，在该局部变量存在的函数对于整个程序生存期间只有一份拷贝；因此也是共享的&lt;br&gt; d. 文件等公用资源：这个是共享的，使用这些公共资源的线程必须同步。windows下存在的几种线程同步资源的方式：信号、临界区、事件、互斥体&lt;br&gt; &lt;strong&gt;&lt;font color=&quot;#DC143C&quot;&gt;线程独享的资源&lt;/font&gt;&lt;/strong&gt;:&lt;br&gt; a. 线程ID:每个线程都有自己的线程ID，这个ID在本进程中是唯一的。进程用此来标识线程。&lt;br&gt; b. 寄存器组的值:由于线程间是并发运行的，每个线程有自己不同的运行线索，当从一个线程切换到另一个线程上时，必须将原有的线程的寄存器集合的状态保存，以便将来该线程在被重新切换到时能得以恢复。&lt;br&gt; c. 线程的堆栈:&lt;font color=&quot;#DC143C&quot;&gt;堆栈是保证线程独立运行所必须的.&lt;/font&gt;线程函数可以调用函数，而被调用函数中又是可以层层嵌套的，所以线程 必须拥有自己的函数堆栈，使得函数调用可以正常执行，不受其他线程的影响。&lt;br&gt; d. 错误返回码:由于同一个进程中有很多个线程在同时运行，可能某个线程进行系统调用 后设置了errno值，而在该线程还没有处理这个错误，另外一个线程就在此时被调度器投入运行，这样错误值就有可能被修改&lt;br&gt; e. 线程的信号屏蔽码:由于每个线程所感兴趣的信号不同，所以线程的信号屏蔽码应该由线程自己管理。但所有的线程都共享同样的信号处理器&lt;br&gt; f. 线程的优先级:由于线程需要像进程那样能够被调度，那么就必须要有可供调度使用的参数，这个参数就是线程的优先级&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;多进程-和多线程的区别&quot;&gt;&lt;a href=&quot;#多进程-和多线程的区别&quot; class=&quot;headerlink&quot; title=&quot;多进程 和多线程的区别&quot;&gt;&lt;/a&gt;多进程 和多线程的区别&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;进程是资源分配的最小单位，线程是CPU调度的最小单位。
+    
+    </summary>
+    
+      <category term="面试" scheme="http://yoursite.com/categories/%E9%9D%A2%E8%AF%95/"/>
+    
+    
+      <category term="C++" scheme="http://yoursite.com/tags/C/"/>
+    
+  </entry>
   
   <entry>
     <title>C++面试问题总结：指针和引用的区别以及extern C的作用</title>
@@ -383,9 +446,9 @@
     <link href="http://yoursite.com/2018/02/07/C-%E5%BC%80%E5%8F%91%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98%E5%87%86%E5%A4%87%EF%BC%9A%E9%9D%99%E6%80%81%E9%93%BE%E6%8E%A5%E5%92%8C%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5/"/>
     <id>http://yoursite.com/2018/02/07/C-开发面试问题准备：静态链接和动态链接/</id>
     <published>2018-02-07T04:44:33.000Z</published>
-    <updated>2018-02-22T12:54:00.000Z</updated>
+    <updated>2018-03-05T06:39:13.000Z</updated>
     
-    <content type="html"><![CDATA[<p>在Linux下我们用GCC对源码进行编译，编译的过程中有一个步骤是链接。这里我们先了解一下编译的过程，我在xmind中画的一个图如下，对软件不够熟悉，所以画得比较丑。</p><p><img src="/images/Compile&amp;&amp;Linking.png" alt="编译过程"></p><p>大体分为一下几个步骤：</p><ul><li>预处理（Preprocess）</li><li>编译(Complication)</li><li>汇编(Assembly)</li><li>链接(Linking)</li><li>执行(Execute)<a id="more"></a><h2 id="预处理"><a href="#预处理" class="headerlink" title="预处理"></a><strong>预处理</strong></h2></li></ul><p>首先源码文件（.c/.cpp）和相关头文件(.h)被预处理器与编译成(.i)文件，大家可以在终端下输入：</p><p><code>gcc -E hello.cpp -o hello.i</code></p><p><code>hello.i</code>就是预编译之后的源码文件。</p><p>预处理主要是进行一下几个过程：</p><ul><li>将所有的<code>#define</code>删除，并在程序中展开调用该宏的代码</li><li>处理所有的条件编译指令（该指令的作用：<strong>防止头文件的重复包含和编译，即编译的时候只编译<code>#if</code>与<code>#endif</code>之间的代码</strong>），如#if ,#ifdef</li><li>处理<code>#include</code>包含指令，将被包含的文件插入到该预编译指令的位置，该过程是递归进行的，被包含的文件可能还包含其他文件。</li><li>删除所有的注释\\和\<em>…\</em>\</li><li>添加行号和文件标识，如#2 “hello.c” 2,以便于编译时编译器产生调试用的行号信息及用于编译时产生编译错误或警告时能够显示行号信息</li><li>保留所有的#pragma编译器指令，因为编译器须要使用它们</li></ul><h2 id="编译"><a href="#编译" class="headerlink" title="编译"></a><strong>编译</strong></h2><p>编译的过程就是编译器进行一系列的词法分析下、语法分析、语义分析及优化后生成的汇编代码。可以在终端输入以下代码进行编译：</p><p><code>gcc –S hello.i –o hello.s</code></p><p>或者从源文件直接生成汇编代码</p><p><code>gcc –S hello.c –o hello.s</code></p><p>编译主要进行的以下几个过程内容为：</p><ul><li>词法分析：<font color="#DC143C"> 输入源程序，对构成源程序的字符串进行扫描和分解，识别出一个个的单词（亦称单词符号或简称符号），如基本字（begin、end、if、for、while），标识符、常数、运算符和界符（标点符号、左右括号）</font></li><li>语法分析：<font color="#DC143C"> 在词法分析的基础上，根据语言的语法规则，把单词符号串分解成各类语法单位（语法范畴），如“短语”、“句子”、“程序段”和“程序”等。通过语法分析，确定整个输入串是否构成语法上正确的“程序”。</font></li><li>语义分析（加中间代码生成）：<font color="#DC143C"> 对每种语法范畴进行语义i安插，例如，变量是否定义、类型是否正确等等。如果语义正确，则进行另一方面工作，即进行中间代码的解释。这一阶段所依循的是语言的语义规则。通常使用属性文法描述语义规则</font></li><li>汇编代码生成（一般在这之前还有一个优化的过程：依赖程序的等价变换规则，主要进行：公关子表达式的提取、循环优化、删除无用代码等）：<font color="#DC143C">把中间代码（或经优化处理之后）变换成特定机器上的低级语言代码,一般就是变成汇编代码</font></li></ul><h2 id="汇编"><a href="#汇编" class="headerlink" title="汇编"></a><strong>汇编</strong></h2><p>汇编就是将汇编代码转变成机器可以执行的命令，生成目标文件（.o），汇编器as根据汇编指令和机器指令的对照表一一翻译即可完成。可以在终端输入以下代码进行汇编文件的生成：</p><p><code>gcc –c hello.s –o hello.o</code></p><p>或者由源文件生成汇编代码：</p><p><code>gcc –c hello.c –o hello.o</code></p><h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a><strong>链接</strong></h2><p>链接就是链接器ld将各个目标文件组装在一起，解决符号依赖，库依赖关系，并生成可执行文件。可以在终端输入以下命令进行链接：</p><p><code>ld –static crt1.o crti.o crtbeginT.o hello.o –start-group –lgcc –lgcc_eh –lc-end-group crtend.o crtn.o</code></p><blockquote><p>关于动态链接和静态链接的区别如下：</p></blockquote><p><strong><font color="#00FFFF">静态链接：</font></strong></p><font color="#00FFFF">在生成可执行文件的时候(链接阶段)，把所有需要的函数的二进制代码都包含到可执行文件中去。因此，链接器需要知道参与链接的目标文件需要哪些函数，同时也要知道每个目标文件都能提供什么函数，这样链接器才能知道是不是每个目标文件所需要的函数都能正确地链接。如果某个目标文件需要的函数在参与链接的目标文件中找不到的话，链接器就报错了。目标文件中有两个重要的接口来提供这些信息：一个是符号表，另外一个是重定位表</font><font color="#DC143C">核心思想：将不同的可重定位模块打包成一个文件，在链接的时候会自动从这个文件中抽取出用到的模块</font><ul><li>优点：在程序发布的时候就不需要的依赖库，也就是不再需要带着库一块发布，程序可以独立执行</li><li>缺点：<ol><li>程序体积会相对大一些</li><li>如果静态库有更新的话，所有可执行文件都得重新链接才能用上新的静态库,不够灵活</li></ol></li></ul><p><strong><font color="#00FFFF">动态链接：</font></strong></p><font color="#00FFFF">在编译的时候不直接拷贝可执行代码，而是通过记录一系列符号和参数，在程序运行或加载时将这些信息传递给操作系统，操作系统负责将需要的动态库加载到内存中，然后程序在运行到指定的代码时，去共享执行内存中已经加载的动态库可执行代码，最终达到运行时连接的目的</font><font color="#DC143C">核心思想是：代码共享和延迟绑定</font><ul><li>优点：多个程序可以共享同一段代码，而不需要在磁盘上存储多个拷贝</li><li>缺点：由于是运行时加载，可能会影响程序的前期执行性能</li></ul><p><strong><font color="#00FFFF">库：</font></strong><br>一些功能代码经过编译连接后的可执行形式</p><ul><li>静态lib将导出声明和实现都放在lib中。编译后所有代码都嵌入到宿主程序。</li><li>动态lib相当于一个h文件，是对实现部分（.dll文件）的导出部分的声明。编译后只是将导出声明部分编译到宿主程序中，运行时候需要相应的dll文件支持。</li></ul>]]></content>
+    <content type="html"><![CDATA[<p>在Linux下我们用GCC对源码进行编译，编译的过程中有一个步骤是链接。这里我们先了解一下编译的过程，我在xmind中画的一个图如下，对软件不够熟悉，所以画得比较丑。</p><p><img src="/images/Compile&amp;&amp;Linking.png" alt="编译过程"></p><p>大体分为一下几个步骤：</p><ul><li>预处理（Preprocess）</li><li>编译(Complication)</li><li>汇编(Assembly)</li><li>链接(Linking)</li><li>执行(Execute)<a id="more"></a></li></ul><h2 id="预处理"><a href="#预处理" class="headerlink" title="预处理"></a><strong>预处理</strong></h2><p>首先源码文件（.c/.cpp）和相关头文件(.h)被预处理器与编译成(.i)文件，大家可以在终端下输入：</p><p><code>gcc -E hello.cpp -o hello.i</code></p><p><code>hello.i</code>就是预编译之后的源码文件。</p><p>预处理主要是进行一下几个过程：</p><ul><li>将所有的<code>#define</code>删除，并在程序中展开调用该宏的代码</li><li>处理所有的条件编译指令（该指令的作用：<strong>防止头文件的重复包含和编译，即编译的时候只编译<code>#if</code>与<code>#endif</code>之间的代码</strong>），如#if ,#ifdef</li><li>处理<code>#include</code>包含指令，将被包含的文件插入到该预编译指令的位置，该过程是递归进行的，被包含的文件可能还包含其他文件。</li><li>删除所有的注释\\和\<em>…\</em>\</li><li>添加行号和文件标识，如#2 “hello.c” 2,以便于编译时编译器产生调试用的行号信息及用于编译时产生编译错误或警告时能够显示行号信息</li><li>保留所有的#pragma编译器指令，因为编译器须要使用它们</li></ul><h2 id="编译"><a href="#编译" class="headerlink" title="编译"></a><strong>编译</strong></h2><p>编译的过程就是编译器进行一系列的词法分析下、语法分析、语义分析及优化后生成的汇编代码。可以在终端输入以下代码进行编译：</p><p><code>gcc –S hello.i –o hello.s</code></p><p>或者从源文件直接生成汇编代码</p><p><code>gcc –S hello.c –o hello.s</code></p><p>编译主要进行的以下几个过程内容为：</p><ul><li>词法分析：<font color="#DC143C"> 输入源程序，对构成源程序的字符串进行扫描和分解，识别出一个个的单词（亦称单词符号或简称符号），如基本字（begin、end、if、for、while），标识符、常数、运算符和界符（标点符号、左右括号）</font></li><li>语法分析：<font color="#DC143C"> 在词法分析的基础上，根据语言的语法规则，把单词符号串分解成各类语法单位（语法范畴），如“短语”、“句子”、“程序段”和“程序”等。通过语法分析，确定整个输入串是否构成语法上正确的“程序”。</font></li><li>语义分析（加中间代码生成）：<font color="#DC143C"> 对每种语法范畴进行语义i安插，例如，变量是否定义、类型是否正确等等。如果语义正确，则进行另一方面工作，即进行中间代码的解释。这一阶段所依循的是语言的语义规则。通常使用属性文法描述语义规则</font></li><li>汇编代码生成（一般在这之前还有一个优化的过程：依赖程序的等价变换规则，主要进行：公关子表达式的提取、循环优化、删除无用代码等）：<font color="#DC143C">把中间代码（或经优化处理之后）变换成特定机器上的低级语言代码,一般就是变成汇编代码</font></li></ul><h2 id="汇编"><a href="#汇编" class="headerlink" title="汇编"></a><strong>汇编</strong></h2><p>汇编就是将汇编代码转变成机器可以执行的命令，生成目标文件（.o），汇编器as根据汇编指令和机器指令的对照表一一翻译即可完成。可以在终端输入以下代码进行汇编文件的生成：</p><p><code>gcc –c hello.s –o hello.o</code></p><p>或者由源文件生成汇编代码：</p><p><code>gcc –c hello.c –o hello.o</code></p><h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a><strong>链接</strong></h2><p>链接就是链接器ld将各个目标文件组装在一起，解决符号依赖，库依赖关系，并生成可执行文件。可以在终端输入以下命令进行链接：</p><p><code>ld –static crt1.o crti.o crtbeginT.o hello.o –start-group –lgcc –lgcc_eh –lc-end-group crtend.o crtn.o</code></p><blockquote><p>关于动态链接和静态链接的区别如下：</p></blockquote><p><strong><font color="#00FFFF">静态链接：</font></strong></p><font color="#00FFFF">在生成可执行文件的时候(链接阶段)，把所有需要的函数的二进制代码都包含到可执行文件中去。因此，链接器需要知道参与链接的目标文件需要哪些函数，同时也要知道每个目标文件都能提供什么函数，这样链接器才能知道是不是每个目标文件所需要的函数都能正确地链接。如果某个目标文件需要的函数在参与链接的目标文件中找不到的话，链接器就报错了。目标文件中有两个重要的接口来提供这些信息：一个是符号表，另外一个是重定位表</font><font color="#DC143C">核心思想：将不同的可重定位模块打包成一个文件，在链接的时候会自动从这个文件中抽取出用到的模块</font><ul><li>优点：在程序发布的时候就不需要的依赖库，也就是不再需要带着库一块发布，程序可以独立执行</li><li>缺点：<ol><li>程序体积会相对大一些</li><li>如果静态库有更新的话，所有可执行文件都得重新链接才能用上新的静态库,不够灵活</li></ol></li></ul><p><strong><font color="#00FFFF">动态链接：</font></strong></p><font color="#00FFFF">在编译的时候不直接拷贝可执行代码，而是通过记录一系列符号和参数，在程序运行或加载时将这些信息传递给操作系统，操作系统负责将需要的动态库加载到内存中，然后程序在运行到指定的代码时，去共享执行内存中已经加载的动态库可执行代码，最终达到运行时连接的目的</font><font color="#DC143C">核心思想是：代码共享和延迟绑定</font><ul><li>优点：多个程序可以共享同一段代码，而不需要在磁盘上存储多个拷贝</li><li>缺点：由于是运行时加载，可能会影响程序的前期执行性能</li></ul><p><strong><font color="#00FFFF">库：</font></strong><br>一些功能代码经过编译连接后的可执行形式</p><ul><li>静态lib将导出声明和实现都放在lib中。编译后所有代码都嵌入到宿主程序。</li><li>动态lib相当于一个h文件，是对实现部分（.dll文件）的导出部分的声明。编译后只是将导出声明部分编译到宿主程序中，运行时候需要相应的dll文件支持。</li></ul>]]></content>
     
     <summary type="html">
     
@@ -421,55 +484,6 @@
     
       &lt;p&gt;最近在制作一个小的电子相册，是关于我知道有限的糖永永的回忆，想要送给她做情人节礼物。知道她喜欢皮卡丘，很喜欢小王子，但我觉得如果送给她的礼物没有我加入的成分就不够真诚，就可俗了。&lt;/p&gt;
 &lt;p&gt;第一步（素材准备）：从她给我发的照片以及她的朋友圈中分析让她印象深刻的回忆，然后以时间为标签保存下来，真的是素材太少了
-    
-    </summary>
-    
-      <category term="日记" scheme="http://yoursite.com/categories/life/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>C++面试问题准备：面向对象的基本原则</title>
-    <link href="http://yoursite.com/2018/02/04/C-%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98%E5%87%86%E5%A4%87%EF%BC%9A%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%8E%9F%E5%88%99/"/>
-    <id>http://yoursite.com/2018/02/04/C-面试问题准备：面向对象的基本原则/</id>
-    <published>2018-02-04T13:47:31.000Z</published>
-    <updated>2018-02-22T12:54:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>关于面向对象的五个基本原则：</p><ul><li>单一职责原则</li><li>开放封闭原则</li><li>Liskov替换原则</li><li>依赖导致原则</li><li>接口隔离原则<a id="more"></a></li></ul><h3 id="单一职责原则（Single-Resposibility-Principle）"><a href="#单一职责原则（Single-Resposibility-Principle）" class="headerlink" title="单一职责原则（Single-Resposibility Principle）"></a>单一职责原则（Single-Resposibility Principle）</h3><ul><li>一个类应该仅有一个引起它变化的原因(最简单，最容易理解却最不容易做到的一个设计原则)</li></ul><p>单一职责原则可以看做是低耦合、高内聚在面向原则上的引申，以提高内聚性来减少引起变化的原因</p><figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//加法</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Add</span> : <span class="title">JiSuanQi</span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Add</span>(<span class="params"><span class="keyword">int</span> n1,<span class="keyword">int</span> n2</span>) : <span class="title">base</span>(<span class="params">n1,n2</span>)</span>&#123;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">double</span> <span class="title">JiSuan</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.Number1 + <span class="keyword">this</span>.Number2;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//减法</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Sub</span> : <span class="title">JiSuanQi</span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Sub</span>(<span class="params"><span class="keyword">int</span> n1,<span class="keyword">int</span> n2</span>) : <span class="title">base</span>(<span class="params">n1,n2</span>)</span>&#123;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">double</span> <span class="title">JiSuan</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.Number1 - <span class="keyword">this</span>.Number2;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>职员类例子：比如在职员类里，将工程师、销售人员、销售经理这些情况都放在职员类里考虑，其结果将会非常混乱，在这个假设下，职员类里的每个方法都要if else判断是哪种情况，从类结构上来说将会十分臃肿，并且上述三种的职员类型，不论哪一种发生需求变化，都会改变职员类！这个是大家所不愿意看到的！</p><h3 id="开放封闭原则（Open-Closed-principle）"><a href="#开放封闭原则（Open-Closed-principle）" class="headerlink" title="开放封闭原则（Open-Closed principle）"></a>开放封闭原则（Open-Closed principle）</h3><ul><li>软件实体应该是可扩展的，而不可修改的。也就是，对扩展开放，对修改封闭的。因为修改程序可能会造成错误，不能修改，但是可以添加新的功能</li></ul><figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//类似于上面的计算器，对于要添加的功能就添加一个类，然后只修改下面的switch就可以了</span></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">static</span> JiSuanQi <span class="title">GetJiSuanObject</span>(<span class="params"><span class="keyword">int</span> n1,<span class="keyword">string</span> czf,<span class="keyword">int</span> n2</span>) </span>&#123;</span><br><span class="line">    JiSuanQi jsq = <span class="literal">null</span>;</span><br><span class="line">    <span class="keyword">switch</span>(czf) &#123;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">"+"</span> :</span><br><span class="line">                jsq = <span class="keyword">new</span> Add(n1,n2);</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">"-"</span> :</span><br><span class="line">                jsq = <span class="keyword">new</span> Sub(n1,n2);</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">"/"</span> :</span><br><span class="line">                jsq = <span class="keyword">new</span> div(n1,n2);</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> jsq;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="Liskov替换原则（Liskov-Substituion-Principle）"><a href="#Liskov替换原则（Liskov-Substituion-Principle）" class="headerlink" title="Liskov替换原则（Liskov-Substituion Principle）"></a>Liskov替换原则（Liskov-Substituion Principle）</h3><ul><li>子类必须能够替换其基类</li></ul><figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//上例中子类能够替换父类，而父类不能替换子类</span></span><br><span class="line">JisuanQi jsp=<span class="keyword">new</span> <span class="type">Add</span>(n1,n2);</span><br></pre></td></tr></table></figure><p>这一思想体现为对继承机制的约束规范，只有子类能够替换基类时，才能保证系统在运行期内识别子类，这是保证继承复用的基础</p><blockquote><p>如果子类不能完整实现父类的方法，或者父类的某些方法在子类中已经发生”畸变”，则建议断开父子继承关系，采用依赖、聚集、组合等关系代替继承。正如上面的基类JisuanQi，若我们要实现一个功能为模拟大数运算，则该类就无法继承计算器类，那么只能采用组合了</p></blockquote><p><strong>最佳实践：在项目中采用liskov替换原则时尽量避免子类的”个性”，一旦子类有”个性”，这个子类和父类之间的关系就很难调和了，把子类当作父类使用，子类的”个性”被抹杀；把子类单独作为一个业务来使用，则会让代码间的耦合关系变得破朔迷离。</strong></p><h3 id="依赖倒置原则（Dependecy-Inversion-Principle）"><a href="#依赖倒置原则（Dependecy-Inversion-Principle）" class="headerlink" title="依赖倒置原则（Dependecy-Inversion Principle）"></a>依赖倒置原则（Dependecy-Inversion Principle）</h3><ul><li>高层模块不应该依赖于底层模块，两者都应该依赖其<strong>抽象</strong></li><li>抽象不应该依赖细节</li><li>细节应该依赖抽象</li></ul><blockquote><p>即可以理解为面向接口编程</p></blockquote><p>采用依赖倒置原则可以减少类间的耦合性，提高系统的稳定性，减少并发引起的风险，提高代码的可读性和可维护性</p><h3 id="接口隔离原则（Interface-Segregation-Principle）"><a href="#接口隔离原则（Interface-Segregation-Principle）" class="headerlink" title="接口隔离原则（Interface-Segregation Principle）"></a>接口隔离原则（Interface-Segregation Principle）</h3><ul><li>使用多个小的专门的接口，而不要使用一个大的总接口</li></ul><p>就是每一个接口都执行一个专门的功能，用什么调什么。这样可以提高代码的灵活性，还可以降低类间的耦合性。提高稳定性。</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;关于面向对象的五个基本原则：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;单一职责原则&lt;/li&gt;
-&lt;li&gt;开放封闭原则&lt;/li&gt;
-&lt;li&gt;Liskov替换原则&lt;/li&gt;
-&lt;li&gt;依赖导致原则&lt;/li&gt;
-&lt;li&gt;接口隔离原则
-    
-    </summary>
-    
-      <category term="面试" scheme="http://yoursite.com/categories/%E9%9D%A2%E8%AF%95/"/>
-    
-    
-      <category term="C++" scheme="http://yoursite.com/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2018-02-03</title>
-    <link href="http://yoursite.com/2018/02/03/2018-02-03/"/>
-    <id>http://yoursite.com/2018/02/03/2018-02-03/</id>
-    <published>2018-02-03T14:58:20.000Z</published>
-    <updated>2018-02-22T12:54:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>今天是个好日子，凌晨的时候陕西省的考研成绩陆续都出来啦，而我看到身边的同学都对自己的成绩很满意，内心真的替他们开心。一张舍友12：00还在奋笔疾书的照片：</p><p><img src="/images/tianci.jpg" alt=""><a id="more"></a></p><p>然而当我怀着忐忑的心情去问糖永永同学的成绩的时候，她没有回复。我有点慌，隔了20分钟，发现她还是没有回复！ 当时的情况是成绩已经出来了，依据我对她有限的了解她应该会去查成绩，而且会很开心又很忐忑得查，而且如果成绩好的话她肯定会主动告诉我并且大肆宣扬！可是没有消息，没有朋友圈，那她到底考得不好成什么样子了！</p><p>我有点不知所措，我不知道她在面对重大挫折的时候会是一种什么样子的心态，所以没有办法采取合适的安慰措施。天哪，瞬间感觉整个人都不好了，想给她打个语音电话，但是我嘴笨，万一她听不进去岂不是更加难过了～fucked</p><p>对了，可以去请教别人呀，现在同学应该睡了，认识的关系不错的女生也不是很多，只能去百度，知乎，微信读书得一些书友（情感类书籍读得多的）大肆提问。结合他们的看法最后自己想了一下，只能稳住她的情绪了。她还是没有回复～～～怀着沮丧的心情睡着了，不过又有点小庆幸（万一她还没查成绩呢，几率好小啊）</p><p>晚上做了一堆奇奇怪怪的梦，一条小鲤鱼，不对，应该是两条（其中有一条是糖同学，另一条不知道是谁），红白相间，在清澈的水里一直游，最后从一个什么东西给跳过去了。紧接着发现我自己在考研的考场，好像处于旁观者，在看大家答题，有一些人答着答着就哭了。紧接着我又来到了。。。（确切的说想不起来了）</p><p>早上6：00醒来一次，看了一次手机，她没回复，这下凉了，感觉她没这么脆弱呀，突然又感觉我对她一点也不了解了，又无比沮丧得睡着了。但是当我9：30再次醒来的时候，谢天谢地，我看到她无奈得信息，原来她还没查成绩，我感觉整个世界都亮了，就说嘛，许愿祈祷了那么多次神灵不会这么玩我的吧。但是瞬间有感觉自己怎么这么紧张，这么搞笑呀～ 我很好奇如果我自己考研查成绩有没有这么紧张呢，哎～～～～～～～～～  明天18：00见了</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;今天是个好日子，凌晨的时候陕西省的考研成绩陆续都出来啦，而我看到身边的同学都对自己的成绩很满意，内心真的替他们开心。一张舍友12：00还在奋笔疾书的照片：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/images/tianci.jpg&quot; alt=&quot;&quot;&gt;
     
     </summary>
     
