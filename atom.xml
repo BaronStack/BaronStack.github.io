@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-03-07T13:43:33.000Z</updated>
+  <updated>2018-03-07T13:43:47.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/2018/03/07/C-%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98%E5%87%86%E5%A4%87%EF%BC%9A%E5%89%91%E6%8C%87-offer-%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%8E%92%E5%BA%8F%E9%93%BE%E8%A1%A8%E5%92%8C%E6%A0%91%E7%9A%84%E5%AD%90%E7%BB%93%E6%9E%84/"/>
     <id>http://yoursite.com/2018/03/07/C-面试问题准备：剑指-offer-合并两个排序链表和树的子结构/</id>
     <published>2018-03-07T11:59:45.000Z</published>
-    <updated>2018-03-07T13:43:33.000Z</updated>
+    <updated>2018-03-07T13:43:47.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="合并两个排序链表"><a href="#合并两个排序链表" class="headerlink" title="合并两个排序链表"></a>合并两个排序链表</h2><blockquote><p>输入两个递增排序的链表，合并这两个链表并使新链表中的结点仍然使按照递增排序的。</p></blockquote><p>常见问题：</p><ul><li>写代码之前没有对合并过程想清楚，最终合并出来的链表要么中间断开，要么没有做到递增排序</li><li>代码的鲁棒性存在问题，程序有特殊输入会崩溃（输入空链表）<a id="more"></a><img src="/images/mergeList.png" alt=""></li></ul><p>两个链表的合并过程中：</p><ol><li>链表1的头结点的值小于链表2的头结点的值，因此链表1的头结点使合并后链表的头结点</li><li>在剩余的结点中，链表2的头结点的值小于链表1的头结点的值，因此链表2的头结点是剩余结点的头结点，把这个结点和之前已经合并好的结点连接起来。</li></ol><p>之后的步骤和以上两个步骤的比较是相同的，则可以用递归解决，代码如下：</p><figure class="highlight xl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">listNode *mergeList(listNode *head1,listNode *head2) &#123;</span><br><span class="line">    <span class="keyword">if</span> (head1 == NULL)</span><br><span class="line">        return head2;</span><br><span class="line">    <span class="keyword">if</span> (head2 == NULL)</span><br><span class="line">        return head1;</span><br><span class="line">    listNode *mergeResult = NULL;</span><br><span class="line">    <span class="function"><span class="title">if</span> (head1 -&gt;</span> <span class="function"><span class="title">value</span> &lt; head2 -&gt;</span> value) &#123;</span><br><span class="line">        mergeResult = head1;</span><br><span class="line">        <span class="function"><span class="title">mergeResult</span> -&gt;</span> <span class="function"><span class="title">next</span> = mergeList(head1 -&gt;</span> next,head2);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> &#123;</span><br><span class="line">        mergeResult = head2;</span><br><span class="line">        <span class="function"><span class="title">mergeResult</span> -&gt;</span> <span class="function"><span class="title">next</span> = mergeList(head1,head2 -&gt;</span> next);</span><br><span class="line">    &#125;</span><br><span class="line">    return mergeResult;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="树的子结构"><a href="#树的子结构" class="headerlink" title="树的子结构"></a>树的子结构</h2><blockquote><p>输入两棵二叉树A和B，判断B是不是A的子结构。</p></blockquote><p><img src="/images/subTree.png" alt=""></p><p>要查找第一棵树中是否存在和第二棵树一样的字结构。</p>]]></content>
     
