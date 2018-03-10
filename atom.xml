@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-03-10T09:12:01.000Z</updated>
+  <updated>2018-03-10T14:00:46.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>C++面试问题准备：Linux下GDB命令调试程序</title>
+    <link href="http://yoursite.com/2018/03/10/C-%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98%E5%87%86%E5%A4%87%EF%BC%9ALinux%E4%B8%8BGDB%E5%91%BD%E4%BB%A4%E8%B0%83%E8%AF%95%E7%A8%8B%E5%BA%8F/"/>
+    <id>http://yoursite.com/2018/03/10/C-面试问题准备：Linux下GDB命令调试程序/</id>
+    <published>2018-03-10T12:46:32.000Z</published>
+    <updated>2018-03-10T14:00:46.000Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>GDB是一个由GNU开源组织发布的、UNIX/LINUX操作系统下的、基于命令行的、功能强大的程序调试工具。<br> GDB中的命令固然很多，但我们只需掌握其中十个左右的命令，就大致可以完成日常的基本的程序调试工作</p></blockquote> <a id="more"></a><p>命令参数：</p><ul><li>file &lt;文件名&gt;：加载被调试的可执行程序文件。因为一般都在被调试程序所在目录下执行GDB，因而文本名不需要带路径。</li><li>r：Run的简写，运行被调试的程序。如果此前没有下过断点，则执行完整个程序；如果有断点，则程序暂停在第一个可用断点处</li><li>c：Continue的简写，继续执行被调试程序，直至下一个断点或程序结束。</li><li>b：Breakpoint的简写，设置断点。两可以使用“行号”“函数名称”“执行地址”等方式指定断点位置。</li><li>s, n：s–执行一行源程序代码，如果此行代码中有函数调用，则进入该函数，相当于其他调试器中的”step into”（单步跟踪进入)<br>n–执行一行源程序代码，此行代码中的函数调用也一并执行。相当于其它调试器中的“Step Over (单步跟踪)”</li><li>si, ni：si命令类似于s命令，ni命令类似于n命令。所不同的是，这两个命令（si/ni）所针对的是汇编指令，而s/n针对的是源代码。</li><li>display／undisplay：display，设置程序中断后欲显示的数据及其格式。例如，如果希望每次程序中断后可以看到即将被执行的下一条汇编指令，可以使用命令<code>display /i $pc</code>.其中 $pc 代表当前汇编指令，/i 表示以十六进行显示。当需要关心汇编代码时，此命令相当有用</li><li>i：Info的简写，用于显示各类信息，详情请查阅“help i”。例如查看添加断点信息命令：<code>i b</code></li><li>q：Quit的简写，退出GDB调试环境。</li><li>help：GDB帮助命令，提供对GDB名种命令的解释说明。如果指定了“命令名称”参数，则显示该命令的详细说明；如果没有指定参数，则分类显示所有GDB命令，供用户进一步浏览和查询。<code>help display</code></li></ul><p>接下来进行实践，代码如下：</p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">andFunction</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span> b)</span> </span>&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"Andfunction is called,a = %d,b = %d"</span>,a,b);</span><br><span class="line">    <span class="keyword">return</span> (a + b);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> a = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">int</span> b = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">int</span> n = andFunction(a,b);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"main is called. result is %d"</span>,n);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>将该函数在终端下编译：</p><p><code>vim testGDBFunction.c</code> 创建’.c’文件</p><p><img src="/images/vim.png" alt=""></p><p><code>gcc -g -Wall -o testGDBFunction testGDBFunction.c</code> 以’-g’形式编译，结果方便gdb调试。或者也可以运行命令<code>gcc -g testGDBFunction.c -o testGDBFunction</code></p><p><img src="/images/gcc.png" alt=""></p><p><code>gdb testGDBFunction</code></p><p><img src="/images/gdbProgram.png" alt=""></p><p><code>r</code>运行’-r’</p><p><img src="/images/run.png" alt=""></p><p><code>b main</code>和<code>b addFunction</code> 在该函数处设置断点</p><p><img src="/images/breakDown.png" alt=""></p><p><code>info b</code>显示断点信息</p><p><img src="/images/info.png" alt=""></p><p><code>s</code> step单步进入跟踪</p><p><img src="/images/step.png" alt=""></p><p><code>si</code>和<code>ni</code>单步执行且显示汇编指令</p><p><img src="/images/siAdnNi.png" alt=""></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;GDB是一个由GNU开源组织发布的、UNIX/LINUX操作系统下的、基于命令行的、功能强大的程序调试工具。&lt;br&gt; GDB中的命令固然很多，但我们只需掌握其中十个左右的命令，就大致可以完成日常的基本的程序调试工作&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="面试" scheme="http://yoursite.com/categories/%E9%9D%A2%E8%AF%95/"/>
+    
+    
+      <category term="linux" scheme="http://yoursite.com/tags/linux/"/>
+    
+  </entry>
   
   <entry>
     <title>C++面试问题准备：剑指 offer--第一个只出现一次的字符和数组中的逆序对</title>
@@ -461,27 +485,6 @@
     
     
       <category term="C++" scheme="http://yoursite.com/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2018-02-16</title>
-    <link href="http://yoursite.com/2018/02/16/2018-02-16/"/>
-    <id>http://yoursite.com/2018/02/16/2018-02-16/</id>
-    <published>2018-02-16T15:05:27.000Z</published>
-    <updated>2018-02-22T13:27:10.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>今天是大年初一，昨天收到很多祝福，发送了很多祝福，哈哈 还是糖永永同学的祝福让我印象深刻:<font color="#DC143C">巴啦啦小魔仙蹦沙卡拉卡二哈跳狗年事业旺旺旺旺旺旺!</font></p><p>哈哈 我想只有她能想出这样的祝福了～ 开心的。。。<a id="more"></a></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;今天是大年初一，昨天收到很多祝福，发送了很多祝福，哈哈 还是糖永永同学的祝福让我印象深刻:&lt;font color=&quot;#DC143C&quot;&gt;巴啦啦小魔仙蹦沙卡拉卡二哈跳狗年事业旺旺旺旺旺旺!&lt;/font&gt;&lt;/p&gt;
-&lt;p&gt;哈哈 我想只有她能想出这样的祝福了～ 开心的。。。
-    
-    </summary>
-    
-      <category term="日记" scheme="http://yoursite.com/categories/life/"/>
-    
     
   </entry>
   
