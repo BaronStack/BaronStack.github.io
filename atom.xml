@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-03-11T07:17:08.000Z</updated>
+  <updated>2018-03-11T07:57:41.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,34 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>C++面试问题准备：什么函数不能作为虚函数</title>
+    <link href="http://yoursite.com/2018/03/11/C-%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98%E5%87%86%E5%A4%87%EF%BC%9A%E4%BB%80%E4%B9%88%E5%87%BD%E6%95%B0%E4%B8%8D%E8%83%BD%E4%BD%9C%E4%B8%BA%E8%99%9A%E5%87%BD%E6%95%B0/"/>
+    <id>http://yoursite.com/2018/03/11/C-面试问题准备：什么函数不能作为虚函数/</id>
+    <published>2018-03-11T07:22:28.000Z</published>
+    <updated>2018-03-11T07:57:41.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong><font color="#DC143C">虚函数</font></strong></p><p>虚函数必须是类的非静态成员，即在类的成员函数生命中前面关键字为<code>virtual</code>的是虚函数。虚函数是为了实现的面向对象的多态（动态绑定）机制而提出来的。<br>即在程序运行过程中，进行对象所属类型的匹配，也是父类对象访问子类成员的方式。本质上还是为了实现代码复用以及项目的鲁棒性。<a id="more"></a></p><p>不能作为虚函数的函数如下：</p><ul><li>普通函数（非成员函数）</li></ul><blockquote><p>因为普通函数只能被overload，不能被override，也不能被继承，所以在编译的时候就绑定函数，所以不能申明为virtual，没有意义！</p></blockquote><ul><li>构造函数</li></ul><blockquote><p>主要因为构造函数是用来确定初始化对象的,virtual主要是为了在不了解具体的情况下实现动态绑定，调用不同类型中合适的成员函数而存在的，现在对象都没产生，怎么能实现多态呢。<br>构造函数不能被继承，所以不能virtual；</p></blockquote><ul><li>内联函数</li></ul><font color="#DC143C"><br>inline函数在编译时被展开，在调用处将整个函数替换为代码块，省去了函数跳转的时间，提高了SD，减少函数调用的开销，虚函数是为了继承后对象能够准确的调用自己的函数，执行相应的动作。</font><blockquote><p>inline函数是在编译时期展开的，而virtual函数是在运行时期进行动态绑定，所以两者执行时期不一样。、</p></blockquote><ul><li>静态成员函数</li></ul><blockquote><p>静态成员函数是类的组成部分，但是不是任何对象的组成部分，所有对象共享一份，没有必要动态绑定.而且静态成员函数只能访问静态变量，虽然说是可以继承，但是编译器却不会让它真正的继承，它只能作为整个类共有的成员。</p></blockquote><ul><li>友元函数</li></ul><blockquote><p>友员函数不是类的成员函数，C++不支持友员被继承，所以不能为virtual</p></blockquote><h5 id="综上可以作为虚函数的条件是"><a href="#综上可以作为虚函数的条件是" class="headerlink" title="综上可以作为虚函数的条件是"></a><strong>综上可以作为虚函数的条件是</strong></h5><font color="#DC143C"><br><br>1. 类的成员函数<br>2. 能被继承<br>3. 动态编译 </font><blockquote><p>空指针不能调用虚函数，因为虚指针（指向虚函数表）在类实例化时创建，没有创建对象就没有虚指针，那么用空指针调用虚函数就会崩溃。</p></blockquote><p>空指针可以访问普通的成员函数，但是该成员函数中不能调用类的成员变量，因为虽然知道了函数的入口地址，但是成员变量是在实例化的时候分配地址和空间的。所以如果该函数调用成员变量，指针会因为找不到而崩溃。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;&lt;font color=&quot;#DC143C&quot;&gt;虚函数&lt;/font&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;虚函数必须是类的非静态成员，即在类的成员函数生命中前面关键字为&lt;code&gt;virtual&lt;/code&gt;的是虚函数。虚函数是为了实现的面向对象的多态（动态绑定）机制而提出来的。&lt;br&gt;即在程序运行过程中，进行对象所属类型的匹配，也是父类对象访问子类成员的方式。本质上还是为了实现代码复用以及项目的鲁棒性。
+    
+    </summary>
+    
+      <category term="面试" scheme="http://yoursite.com/categories/%E9%9D%A2%E8%AF%95/"/>
+    
+    
+      <category term="C++" scheme="http://yoursite.com/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
     <title>C++面试问题准备:C++类的大小--sizeof(class)</title>
     <link href="http://yoursite.com/2018/03/11/C-%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98%E5%87%86%E5%A4%87-C-%E7%B1%BB%E7%9A%84%E5%A4%A7%E5%B0%8F-sizeof-class/"/>
     <id>http://yoursite.com/2018/03/11/C-面试问题准备-C-类的大小-sizeof-class/</id>
     <published>2018-03-11T06:18:40.000Z</published>
-    <updated>2018-03-11T07:17:08.000Z</updated>
+    <updated>2018-03-11T07:18:40.000Z</updated>
     
     <content type="html"><![CDATA[<h3 id="空类的大小"><a href="#空类的大小" class="headerlink" title="空类的大小"></a>空类的大小</h3><p><img src="/images/empty.png" alt=""></p><p>为什么空的什么都没有是1呢？<a id="more"></a></p><blockquote><p>类的实例化就是在内存中分配一块地址，每个实例在内存中都有独一无二的地址。同样空类也会被实例化，所以编译器会给空类隐含的添加一个字节，这样空类实例化之后就有了独一无二的地址了。所以空类的sizeof为1。</p></blockquote><h3 id="一般非空类大小"><a href="#一般非空类大小" class="headerlink" title="一般非空类大小"></a>一般非空类大小</h3><p><img src="/images/generalNo.png" alt=""></p><blockquote><p>编译器为类中的数据成员分配一定的存储空间。实例化时类的地址拥有指向将数据成员的空间。同时因为内存对齐，所以该类的大小就是16(我电脑是64位系统，char * 大小为8字节)</p></blockquote><p>这里简单提一下32位和64位机器中数据类型的长度大小的不同</p><p>32位：</p><ul><li>char 1个字节</li><li>short 2个字节</li><li>int 4个字节</li><li>long 4个字节</li><li>long long 8个字节</li><li>指针  4个字节</li></ul><p>64位：</p><ul><li>char 1个字节</li><li>short 2个字节</li><li>int 4个字节</li><li>long 8个字节</li><li><font color="#DC143C">long long 8个字节</font></li><li><font color="#DC143C">指针 8个字节</font></li></ul><h3 id="有虚函数的类"><a href="#有虚函数的类" class="headerlink" title="有虚函数的类"></a>有虚函数的类</h3><p><img src="/images/virtualNo.png" alt=""></p><blockquote><p>这里类中如果有虚函数，编译器在类实例化的时候会创建一个虚函数表。所以此时该类实例的大小又多了一个指向虚函数表的指针。</p></blockquote><h3 id="有虚函数类的继承"><a href="#有虚函数类的继承" class="headerlink" title="有虚函数类的继承"></a>有虚函数类的继承</h3><p><img src="/images/virtualExtend.png" alt=""></p><blockquote><p>可见子类的大小是本身成员变量的大小加上父类的大小。</p></blockquote><h3 id="拥有静态变量的类"><a href="#拥有静态变量的类" class="headerlink" title="拥有静态变量的类"></a>拥有静态变量的类</h3><p><img src="/images/staticVariable.png" alt=""></p><blockquote><p>看到添加了静态变量的显示结果是和上一个显示的结果一样的。因为static变量对于整个类只有一份拷贝，且静态成员被编译器放在内存空间的全局存储区，但是在类实例化的时候只为类中的成员变量分配存储空间，所以它不会影响类的大小。</p></blockquote>]]></content>
     
@@ -472,26 +495,6 @@
     
     
       <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2018-02-25</title>
-    <link href="http://yoursite.com/2018/02/25/2018-02-25/"/>
-    <id>http://yoursite.com/2018/02/25/2018-02-25/</id>
-    <published>2018-02-25T15:33:45.000Z</published>
-    <updated>2018-02-25T15:54:37.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>今天是一个离开家的日子，真的不知道下次回到家会是什么时候！母亲很早就帮我收拾东西，虽然我的东西并不是很多，而且我已经将大部分重要的东西放进了箱子里，但是她仍然四处走动，想要为我并不是很大的箱子中装入可以装入的东西。母亲只是想要通过这种繁忙的方式来弥补我即将离开后自己内心的孤独，想到每一个离开的孩子对于父母来说都会是那么痛苦，难受！随着年龄的增长，相见本就不易，且行且珍惜。<a id="more"></a>刚打扫完宿舍，脑袋有晕！</p><p>在火车上看完永永推荐的《灵契》，看到了可能是她哇一下（哭）的场景的时候，我有点感动，原来同志之间的爱情可以是这样的陪伴来做为爱的告白！</p><blockquote><font color="#DC143C">纵使天高地阔，我想去的地方，只有一个,您的身边</font> </blockquote><p>其实呢，我倒是挺想看看她”哇一下”是什么样子的呀!</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;今天是一个离开家的日子，真的不知道下次回到家会是什么时候！母亲很早就帮我收拾东西，虽然我的东西并不是很多，而且我已经将大部分重要的东西放进了箱子里，但是她仍然四处走动，想要为我并不是很大的箱子中装入可以装入的东西。母亲只是想要通过这种繁忙的方式来弥补我即将离开后自己内心的孤独，想到每一个离开的孩子对于父母来说都会是那么痛苦，难受！随着年龄的增长，相见本就不易，且行且珍惜。
-    
-    </summary>
-    
-      <category term="日记" scheme="http://yoursite.com/categories/life/"/>
-    
     
   </entry>
   
