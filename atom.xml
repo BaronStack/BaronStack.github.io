@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-03-16T04:05:13.000Z</updated>
+  <updated>2018-03-16T04:05:25.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/2018/03/16/%E8%A5%BF%E5%B1%B1%E5%B1%85%EF%BC%9A%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88%E9%9D%A2%E7%BB%8F/"/>
     <id>http://yoursite.com/2018/03/16/西山居：开发工程师面经/</id>
     <published>2018-03-16T03:20:41.000Z</published>
-    <updated>2018-03-16T04:05:13.000Z</updated>
+    <updated>2018-03-16T04:05:25.000Z</updated>
     
     <content type="html"><![CDATA[<p>当我写下这篇博客的时候其实已经知道我此次面试已经没戏了，但是我还是想要反思自我实力以及对网上所谓西山居面经的吐槽（网上的面经太简单了）。  </p><p>昨晚收到面试通知，我是C／C++方向，之后就一直在具体准备，先是网上的面经，就是一些较为基础的问题： <a id="more"></a> </p><ol><li>堆和栈的区别</li><li>静态库和动态库的区别，什么时候动态链接库需要的内存会超过静态库</li><li>Linux动态库的后缀名是什么</li><li>windows的任务调度机制</li><li>模版的实现原理，以及类型是在编译期绑定还是在运行期绑定</li><li>double的精度问题，0.1能精确表示吗</li><li>给一个ip地址，/22，写出子网掩码和广播地址</li><li>c++中的虚函数表</li><li>说说四次挥手的过程，为什么握手要三次，挥手要四次</li><li>linux的终端的工作方式</li><li>shell脚本里面用过哪些命令</li><li>在公司内网ping www.baidu.com的过程，使用了哪些网络协议</li><li>map里面如何删除一个元素</li><li>你写的程序cpu占用很高怎么办</li><li>程序崩溃了一般的debug步骤</li></ol><p>接下来就是我被问到的问题，面试官一看就是一个搞技术的，一上来就是各种技术问题！自我介绍的时候我有介绍到我做的项目是linux QT下的，主要涉及网络通信。</p><ol><li>QT的跨平台机制是怎么实现的，为什么它可以在Linux、MAC、Windows下运行</li><li>什么是阻塞，非阻塞、select()和epoll的区别</li><li>多线程和多进程的区别，各自的优缺点</li><li>Linux下查找指定文件名的文件（find），查找文件中指定的独立字符串(想不出来，好像是grep的某个同类命令)</li><li>awk和sed了解吗(没有好好准备)</li><li>vi非编辑模式下替换字符</li><li>C++ 的跨平台机制，为什么它可以在windows、Linux下运行</li><li>Java的跨平台机制，Java和C/C++的区别</li><li>python下创建一个0-9的数组</li><li>mysql 和mongodb的区别</li><li>MySQL，Oracle，Access的区别</li><li>NoSQL和关系型数据库的区别</li><li>我写了我了解过tensor flow,问了常用的激励函数(relu,sigmoid)，各自的优缺点</li><li>RNN和LSTM的区别</li><li>git如何创建一个分支,git的stash（git的核心）</li><li>C／C++标准出来的新特性说说</li><li>两个智能指针的用法</li><li>static关键字的作用</li><li>函数栈是在什么时候创建的，具体的过程</li><li>你所了解的服务器技术</li><li>QQ服务器是怎么运作的</li><li>端游中数据的交互</li></ol><p>总结：我大概只能想到这么多了。面试官是根据个人简历去问的，自我介绍的时候发掘你项目中用到的技术，然后根据你的技能点去问你熟悉的东。其中很多我答的都不好甚至没有答上来，面试官就说你对低层实现不够了解，对自己发展方向不够清晰，说是C++服务器方向，但是大多做的东西都是C端，而且一些常见的服务器技术都不去了解，Linux命令不够熟悉（很长时间没有练了，一直在总结问题）。<br>总之还是个人基础不够扎实，所以以后学习大概模拟一个方向：搞清楚软件的运行原理，然后由大及小，遇到细节上的问题也是穷尽原理，这样学到的东西才有体系，才有深度。</p>]]></content>
     
@@ -42,7 +42,7 @@
     <link href="http://yoursite.com/2018/03/15/Linux%E5%B8%B8%E7%94%A8%E4%BF%A1%E5%8F%B7/"/>
     <id>http://yoursite.com/2018/03/15/Linux常用信号/</id>
     <published>2018-03-15T03:43:58.000Z</published>
-    <updated>2018-03-15T09:38:41.000Z</updated>
+    <updated>2018-03-16T04:05:25.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="常用Linux信号"><a href="#常用Linux信号" class="headerlink" title="常用Linux信号"></a>常用Linux信号</h2><p><img src="/images/kill.png" alt=""></p><blockquote><p>Linux系统下有很多信号，按照可靠性可以分为可靠信号和非可靠信号，按时间分为实时信号和非实时信号。</p></blockquote><p>Linux有三种方式来处理收到的信号：</p><ul><li>忽略信号：即对信号不作处理（除了SIGKILL和SIGSTOP）</li><li>捕捉信号：定义信号处理函数，当信号发生时，执行相应的处理函数</li><li>执行缺省操作，Linux对每种信号都规定了默认操作</li></ul><p>常用信号如下：</p><ol><li><strong><font color="#DC143C">SIGHUP</font></strong> 和控制台操作相关，当控制台被关闭的时候系统会向拥有控制台sessionID的进程发送HUP信号，默认HUP信号执行的action是exit,如果远程登启动某个服务进程，并在程序运行时关闭某个链接的会话导致服务进程退出，所以服务程序一般都会用nohup工具启动（该命令就是让系统忽略该信号），或者写一个daemon<a href="">守护进程</a>(利用setsid进行)。</li><li><strong><font color="#DC143C">SIGINT</font></strong> 终止进程，通常我们的ctrl+c就发送这个消息</li><li><strong><font color="#DC143C">SIGQUIT</font></strong> 和SIGINT类似, 但由QUIT字符(通常是Ctrl- / )来控制. 进程收到该消息退出时会产生core文件。</li><li><strong><font color="#DC143C">SIGKILL</font></strong> 消息编号为9，我们经常用kill -9来杀死进程,发送的就是这个消息，程序收到这个消息立即终止，这个消息不能被捕获，封锁或忽略，所以是杀死进程的终极武器。</li><li><strong><font color="#DC143C">SIGTERM</font></strong> 不带参数时kill默认发送的信号，默认是杀死进程</li><li><strong><font color="#DC143C">SIGSTOP</font></strong> 停止进程的执行，同SIGKILL一样不可以被应用程序所处理，注意它和terminate以及interrupt的区别:该进程还未结束, 只是暂停执行</li></ol>]]></content>
     
