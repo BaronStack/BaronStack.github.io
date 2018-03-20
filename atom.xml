@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-03-16T04:05:25.000Z</updated>
+  <updated>2018-03-20T05:29:09.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,66 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>深信服：C++开发工程师面经</title>
+    <link href="http://yoursite.com/2018/03/20/%E6%B7%B1%E4%BF%A1%E6%9C%8D%EF%BC%9AC-%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88%E9%9D%A2%E7%BB%8F/"/>
+    <id>http://yoursite.com/2018/03/20/深信服：C-开发工程师面经/</id>
+    <published>2018-03-20T05:05:00.000Z</published>
+    <updated>2018-03-20T05:29:09.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>本来以为深信服笔试应挂了，结果在第二天吃饭的时候竟然收到了深信服的面试通知，很是惊喜，但是经历的西山居的追根问底之后就发现自己在专业学习过程中还是存在很多的问题。<a id="more"></a><br>深信服的几个笔试编程题目做的不是很好：链表排序、棋盘遍历（简单深搜的应用）、哈夫曼编码的创建过程、求所有的出栈顺序。<br>面试我的是一个很温和的面试官，看起来也是技术大佬。<br>上来先让我做了一个自我介绍，自我介绍的过程中就是将我的项目功能、架构、用到的技术、遇到的问题都一一讲解。又涉及到了网络通信这里（感觉几乎所有的面试官都对网络通信这里情有独钟），面试官追根问底  </p><ol><li>select和epoll有什么区别，为什么选择使用select而不是epoll。如果让你实现epoll，你该会如何实现 </li><li>阻塞和非阻塞、同步和异步有什么区别  </li></ol><p>接下来他就拿出一张表，从上面挑选问题问我  </p><ol><li>C语言中如何查看文件大小 （fseek()）</li><li>二进制文件和文本文件的区别</li><li>C++中拷贝构造函数为什么先要加一个const,为什么传进去的参数是引用，为什么不能是指针</li><li>C++相比于C语言有什么优势</li><li>什么是僵尸进程，为什么会产生僵尸进程，如何避免僵尸进程</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本来以为深信服笔试应挂了，结果在第二天吃饭的时候竟然收到了深信服的面试通知，很是惊喜，但是经历的西山居的追根问底之后就发现自己在专业学习过程中还是存在很多的问题。
+    
+    </summary>
+    
+      <category term="面试" scheme="http://yoursite.com/categories/%E9%9D%A2%E8%AF%95/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>2018-03-19</title>
+    <link href="http://yoursite.com/2018/03/19/2018-03-19/"/>
+    <id>http://yoursite.com/2018/03/19/2018-03-19/</id>
+    <published>2018-03-19T00:08:32.000Z</published>
+    <updated>2018-03-20T05:04:20.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近大脑一直处于高度紧张状态，可能是由于过多的面试以及面试之后对不懂问题的极速学习让脑袋反应有点慢。不过还好有她的陪伴，给予了我莫大的鼓励与支持。<a id="more"></a><br>我告诉她，我其实是因为你才选择去北京，因为我知道你说过你不想异地。当然按照我的要求，北京生活的话得工资好一点，再一个就是进入一个对我来说我很喜欢的公司才行，这样可以在钱上不讲究，也可以在工作上不讲究。所以最近所面试的一些公司相对来说还是不错的，也是让我真正体会到了所谓技术面试是什么样子的。遇到了很多问题，也发现了自己在专业学习上的盲点，真的是受益匪浅。<br>不过每天忙完之后能够和小猪同学见一见，哎呀，还真是幸福感爆棚呢。<br>有很多同学很羡慕我的大学生活，不过仔细回想起来还真是做过好多事情呢，唯一的遗憾就是在专业学习上花费的时间太少，导致最后所花费的时间去学习一些基础性的东西实在是时间不够用。不过有失必有得，我去学习口语，去摄影摄像剪辑，去健身，去游览祖国的大好河山，这个过程也让我体会到了一种不同于学校的感受。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近大脑一直处于高度紧张状态，可能是由于过多的面试以及面试之后对不懂问题的极速学习让脑袋反应有点慢。不过还好有她的陪伴，给予了我莫大的鼓励与支持。
+    
+    </summary>
+    
+      <category term="日记" scheme="http://yoursite.com/categories/life/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>2018-03-16</title>
+    <link href="http://yoursite.com/2018/03/17/2018-03-16/"/>
+    <id>http://yoursite.com/2018/03/17/2018-03-16/</id>
+    <published>2018-03-16T16:49:26.000Z</published>
+    <updated>2018-03-16T17:09:45.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>今天，我和”小唐老师”一起吃了一大桌烧烤，看见她满脸堆笑容，我好开心啊！<a id="more"></a><br>之后我们一起进行了饭后百步走活动，嗯，这个百得在乘一个百。风吹着我和她的头发，我的手抓着她的手，看着她一直笑！这个时候所有的不愉快，所有因为白天自己在专业面试上被打击的不愉快都烟消云散。<br>风儿继续吹着，我们沿着人行道走在昏黄的灯光下，很静，路边那些”一夜尽是长安花”在昏黄灯光下看起来有一种安静的美。原来长安郊区的夜是这个样子的，广场上闪烁的灯光，灯光下映衬的不知名的白色花朵，以及嫩柳扬起的发支都让我感受到一种发自内心的安静。<br>我们依偎在亭子下的小长椅上，我偷偷吻了她，她看起来有点不高兴，但是我忍着脸皮厚被她打了几下，哈哈！看着她枕着我的手臂”目前已经变成她的专用枕头了”，静静得闭目养神。这样就挺好（原谅我最近专注于专业笔试面试，没有去看看看文学类的书，词穷了）！不过，说实话，今天看到的她真的好美好美！<br>每次疲惫的时候只要想起她我就充满动力，我大概知道了她以后想要什么样子的生活，也知道她以后可能会回到老家，我会想尽一切办法和她在一起。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;今天，我和”小唐老师”一起吃了一大桌烧烤，看见她满脸堆笑容，我好开心啊！
+    
+    </summary>
+    
+      <category term="日记" scheme="http://yoursite.com/categories/life/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>西山居：开发工程师面经</title>
@@ -407,79 +467,6 @@
 &lt;p&gt;题目描述：给定单向链表的头指针和一个结点指针，定义一个函数在O(1)时间删除该结点&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;在单向链表中删除一个结点最常规的做法无疑是从链表的头结点开始，顺序遍历查找要删除的结点，并在链表中删除该结点。
-    
-    </summary>
-    
-      <category term="面试" scheme="http://yoursite.com/categories/%E9%9D%A2%E8%AF%95/"/>
-    
-    
-      <category term="C++" scheme="http://yoursite.com/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2018-03-09</title>
-    <link href="http://yoursite.com/2018/03/09/2018-03-09/"/>
-    <id>http://yoursite.com/2018/03/09/2018-03-09/</id>
-    <published>2018-03-09T15:46:27.000Z</published>
-    <updated>2018-03-09T15:58:27.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>最近和她呆在一起的时间比较长，不过大多是在上自习。因为她要准备专八，我要准备找工作。但是今天她接受到了一个她前男友的快递，他送给她一条毛毯，说是看到西安有点冷。<a id="more"></a><br>是的，虽然她并没有答应我，但是我能感觉到她已经能够接受我了。只是看到这个快递，还是很难受，看到她的纠结犹豫了，我忍受着内心无奈与难受，告诉她你把毛毯放宿舍吧，然后想的话再给他打个电话。之后我就去自习室了，路上一时间我发现我不知道再能为她做什么了，真的不知道能够做什么才能让她将心交给我，想着她晚上盖着他送的毛毯，回忆着曾经那段幸福的时光。<br>算了我写不下去了，可能我还是太急了，毕竟她还需要时间！当下之急是解决工作问题，这样才会有更多时间可以陪伴了解，我也相信我能够让她真正喜欢上我！</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;最近和她呆在一起的时间比较长，不过大多是在上自习。因为她要准备专八，我要准备找工作。但是今天她接受到了一个她前男友的快递，他送给她一条毛毯，说是看到西安有点冷。
-    
-    </summary>
-    
-      <category term="日记" scheme="http://yoursite.com/categories/life/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>剑指 offer--从上往下打印和二叉搜索树的后序遍历序列</title>
-    <link href="http://yoursite.com/2018/03/08/C-%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98%E5%87%86%E5%A4%87%EF%BC%9A%E5%89%91%E6%8C%87-offer-%E4%BB%8E%E4%B8%8A%E5%BE%80%E4%B8%8B%E6%89%93%E5%8D%B0%E5%92%8C%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E7%9A%84%E5%90%8E%E5%BA%8F%E9%81%8D%E5%8E%86%E5%BA%8F%E5%88%97/"/>
-    <id>http://yoursite.com/2018/03/08/C-面试问题准备：剑指-offer-从上往下打印和二叉搜索树的后序遍历序列/</id>
-    <published>2018-03-08T12:20:51.000Z</published>
-    <updated>2018-03-14T13:21:03.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="从上往下打印二叉树"><a href="#从上往下打印二叉树" class="headerlink" title="从上往下打印二叉树"></a>从上往下打印二叉树</h2><blockquote><p>题目描述：从上往下打印出二叉树的每个结点，同一层的结点按照从左到右的顺序打印。</p></blockquote><p>因为按层打印的顺序决定应该先打印根节点，所以我们从树的根节点开始分析。 <a id="more"></a></p><p><img src="/images/printTree.jpg" alt=""></p><p>为了接下来能够打印值为8的结点的两个子结点，我们应该在遍历到该结点时把值为6和10的两个结点保存到一个容器，现在容器内就有两个结点了。按照从左到右打印的要求，我们先取出值分别为5和7的两个结点放入数据容器。此时数据容器中有三个结点，值分别为10，5，7。接下来我们从数据容器中取出值为10的结点。注意到值为10的结点比值为5、7的结点先放入容器，此时又比这两个结点先取出，这就是我们经常说的 <strong><font color="#DC143C">先入先出</font></strong></p><p>综上我们可以得到思想：</p><p><strong><font color="#DC143C">每一次打印一个结点的时候，如果该结点有子结点，则把该结点的子结点放到一个队列的末尾。接下来到队列的头部取出最早进入队列的结点，重复前面的打印操作，直至队列中所有的子结点都被打印出来为止</font></strong></p><p>代码如下：</p><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">void printTree(Tree *root) &#123;</span><br><span class="line">    if (root == NULL)</span><br><span class="line">        return ;</span><br><span class="line">    std::deque <span class="tag">&lt;Tree *&gt;</span> dequeTree;</span><br><span class="line">    dequeTree.push_back(root);</span><br><span class="line">    while(dequeTree.size()) &#123;</span><br><span class="line">        Tree *<span class="keyword">node</span> <span class="title">= dequeTree</span>.front();</span><br><span class="line">        dequeTree.pop_front();</span><br><span class="line">        cout <span class="tag">&lt;&lt; node -&gt;</span> value <span class="tag">&lt;&lt; endl;</span></span><br><span class="line"><span class="tag">        if (node -&gt;</span> left)</span><br><span class="line">            dequeTree.push_back(<span class="keyword">node</span> <span class="title">-&gt; left</span>);</span><br><span class="line">        if (<span class="keyword">node</span> <span class="title">-&gt; right</span>)</span><br><span class="line">            dequeTree.push_back(<span class="keyword">node</span> <span class="title">-&gt; right</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="判断二叉搜索树的后序遍历序列"><a href="#判断二叉搜索树的后序遍历序列" class="headerlink" title="判断二叉搜索树的后序遍历序列"></a>判断二叉搜索树的后序遍历序列</h2><blockquote><p>输入一个整数数组，判断该数组是不是某二叉搜索树的后序遍历的结果。如果是则返回true,否则返回false。假设输入的数组的任意两个数字都互不相同。</p></blockquote><p><img src="/images/printTree.jpg" alt=""></p><p>在后续遍历序列中，最后一个数字是树的根节点的值。数组中前面的数字可以分为两部分：第一部分是左子树结点的值，他们都比根节点的值小；第二部分是右子树结点的值，它们都比根节点的值大。根据以上给出的数组，后序遍历结果的最后一个数字8就是根节点的值。在这个数组中，前3个数字5、7和6都比8小，是值为8的结点的左子树结点；后3个数字9、11和10都比8大，是值为8的结点的右子树结点。接下来我们可以用同样的方法，确定数组每一部分对应的子树的结构。</p><p>代码如下：</p><figure class="highlight glsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">bool</span> verifySquenceOfBST(<span class="type">int</span> sequence[],<span class="type">int</span> <span class="built_in">length</span>) &#123;</span><br><span class="line">    <span class="keyword">if</span> (sequence == NULL || <span class="built_in">length</span> &lt;= <span class="number">0</span>)</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    <span class="type">int</span> root = sequence[<span class="built_in">length</span> - <span class="number">1</span>];</span><br><span class="line">    <span class="type">int</span> i = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (; i &lt; <span class="built_in">length</span> - <span class="number">1</span>; ++i)</span><br><span class="line">        <span class="keyword">if</span> (sequence[i] &gt; root)</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">    <span class="type">int</span> j = i;</span><br><span class="line">    <span class="keyword">for</span> (; j &lt; <span class="built_in">length</span> - i - <span class="number">1</span>; ++ j)</span><br><span class="line">        <span class="keyword">if</span> (sequence[j] &lt; root)</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    <span class="type">bool</span> left = <span class="literal">true</span>;</span><br><span class="line">    <span class="keyword">if</span> (i &gt; <span class="number">0</span>)</span><br><span class="line">        left = verifySquenceOfBST(sequence,i);</span><br><span class="line">    <span class="type">bool</span> right = <span class="literal">true</span>;</span><br><span class="line">    <span class="keyword">if</span> (i &lt; <span class="built_in">length</span> - <span class="number">1</span>)</span><br><span class="line">        right = verifySquenceOfBST(sequence,<span class="built_in">length</span> - i - <span class="number">1</span>);</span><br><span class="line">    <span class="keyword">return</span> left &amp;&amp; right;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;从上往下打印二叉树&quot;&gt;&lt;a href=&quot;#从上往下打印二叉树&quot; class=&quot;headerlink&quot; title=&quot;从上往下打印二叉树&quot;&gt;&lt;/a&gt;从上往下打印二叉树&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;题目描述：从上往下打印出二叉树的每个结点，同一层的结点按照从左到右的顺序打印。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;因为按层打印的顺序决定应该先打印根节点，所以我们从树的根节点开始分析。
-    
-    </summary>
-    
-      <category term="面试" scheme="http://yoursite.com/categories/%E9%9D%A2%E8%AF%95/"/>
-    
-    
-      <category term="C++" scheme="http://yoursite.com/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>剑指-offer--合并两个排序链表和树的子结构</title>
-    <link href="http://yoursite.com/2018/03/07/C-%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98%E5%87%86%E5%A4%87%EF%BC%9A%E5%89%91%E6%8C%87-offer-%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%8E%92%E5%BA%8F%E9%93%BE%E8%A1%A8%E5%92%8C%E6%A0%91%E7%9A%84%E5%AD%90%E7%BB%93%E6%9E%84/"/>
-    <id>http://yoursite.com/2018/03/07/C-面试问题准备：剑指-offer-合并两个排序链表和树的子结构/</id>
-    <published>2018-03-07T11:59:45.000Z</published>
-    <updated>2018-03-14T13:22:32.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="合并两个排序链表"><a href="#合并两个排序链表" class="headerlink" title="合并两个排序链表"></a>合并两个排序链表</h2><blockquote><p>输入两个递增排序的链表，合并这两个链表并使新链表中的结点仍然使按照递增排序的。</p></blockquote><p>常见问题：</p><ul><li>写代码之前没有对合并过程想清楚，最终合并出来的链表要么中间断开，要么没有做到递增排序</li><li>代码的鲁棒性存在问题，程序有特殊输入会崩溃（输入空链表）<a id="more"></a><img src="/images/mergeList.png" alt=""></li></ul><p>两个链表的合并过程中：</p><ol><li>链表1的头结点的值小于链表2的头结点的值，因此链表1的头结点使合并后链表的头结点</li><li>在剩余的结点中，链表2的头结点的值小于链表1的头结点的值，因此链表2的头结点是剩余结点的头结点，把这个结点和之前已经合并好的结点连接起来。</li></ol><p>之后的步骤和以上两个步骤的比较是相同的，则可以用递归解决，代码如下：</p><figure class="highlight xl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">listNode *mergeList(listNode *head1,listNode *head2) &#123;</span><br><span class="line">    <span class="keyword">if</span> (head1 == NULL)</span><br><span class="line">        return head2;</span><br><span class="line">    <span class="keyword">if</span> (head2 == NULL)</span><br><span class="line">        return head1;</span><br><span class="line">    listNode *mergeResult = NULL;</span><br><span class="line">    <span class="function"><span class="title">if</span> (head1 -&gt;</span> <span class="function"><span class="title">value</span> &lt; head2 -&gt;</span> value) &#123;</span><br><span class="line">        mergeResult = head1;</span><br><span class="line">        <span class="function"><span class="title">mergeResult</span> -&gt;</span> <span class="function"><span class="title">next</span> = mergeList(head1 -&gt;</span> next,head2);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> &#123;</span><br><span class="line">        mergeResult = head2;</span><br><span class="line">        <span class="function"><span class="title">mergeResult</span> -&gt;</span> <span class="function"><span class="title">next</span> = mergeList(head1,head2 -&gt;</span> next);</span><br><span class="line">    &#125;</span><br><span class="line">    return mergeResult;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="树的子结构"><a href="#树的子结构" class="headerlink" title="树的子结构"></a>树的子结构</h2><blockquote><p>输入两棵二叉树A和B，判断B是不是A的子结构。</p></blockquote><p><img src="/images/subTree.png" alt=""></p><p>如上图，第一棵树命名为A，第二棵树命名为B。</p><p>要查找第一棵树中是否存在和第二棵树一样的字结构,我们可以分成两步：第一步在A中找到和B的根结点的值一样的结点R，第二步再判断A中以R为根节点的子树是否包含和B一样的子树的结构。</p><p>代码如下，注意代码的鲁棒性，即在函数入口处检查参数的正确性。</p><figure class="highlight xl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//第一步，找到和B树根节点数值相同的子树根结点</span></span><br><span class="line">bool judegeSubTree(Tree *root1, Tree *root2) &#123;</span><br><span class="line">    bool isSubTree = <span class="literal">false</span>;</span><br><span class="line">    <span class="keyword">if</span> (root1 != NULL &amp;&amp; root2 != NULL) &#123;</span><br><span class="line">        <span class="function"><span class="title">if</span> (root1 -&gt;</span> <span class="function"><span class="title">value</span> == root2 -&gt;</span> value) &#123;</span><br><span class="line">            isSubTree = judgeDefinateSubTree(root1,root2);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="function"><span class="title">isSubTree</span> = judgeSubTree(root1 -&gt;</span> <span class="function"><span class="title">left</span>,root2) || judgeSubTree(root1 -&gt;</span> right,root2);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return isSubTree;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//第二步，进行两个树各自子结点的比较</span></span><br><span class="line">bool judgeDefinateSubTree(Tree *root1, Tree *root2) &#123;</span><br><span class="line">    bool result = <span class="literal">false</span>;</span><br><span class="line">    <span class="keyword">if</span> (root2 == NULL)</span><br><span class="line">        result = <span class="literal">true</span>;</span><br><span class="line">    <span class="function"><span class="title">if</span> (root1 -&gt;</span> <span class="function"><span class="title">value</span> == root2 -&gt;</span> value)</span><br><span class="line">        result = <span class="literal">true</span>;</span><br><span class="line">    <span class="keyword">else</span> </span><br><span class="line">        <span class="function"><span class="title">result</span> = judgeDefinateSubTree(root1 -&gt;</span> <span class="function"><span class="title">left</span>,root2 -&gt;</span> <span class="function"><span class="title">left</span>) &amp;&amp; judgeDefinateSubTree(root1 -&gt;</span> <span class="function"><span class="title">right</span>, root2 -&gt;</span> right);</span><br><span class="line">    return result;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;合并两个排序链表&quot;&gt;&lt;a href=&quot;#合并两个排序链表&quot; class=&quot;headerlink&quot; title=&quot;合并两个排序链表&quot;&gt;&lt;/a&gt;合并两个排序链表&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;输入两个递增排序的链表，合并这两个链表并使新链表中的结点仍然使按照递增排序的。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;常见问题：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;写代码之前没有对合并过程想清楚，最终合并出来的链表要么中间断开，要么没有做到递增排序&lt;/li&gt;
-&lt;li&gt;代码的鲁棒性存在问题，程序有特殊输入会崩溃（输入空链表）
     
     </summary>
     
