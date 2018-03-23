@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-03-22T13:29:59.000Z</updated>
+  <updated>2018-03-23T17:31:32.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2018-03-23</title>
+    <link href="http://yoursite.com/2018/03/24/2018-03-23/"/>
+    <id>http://yoursite.com/2018/03/24/2018-03-23/</id>
+    <published>2018-03-23T17:13:44.000Z</published>
+    <updated>2018-03-23T17:31:32.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>今天陪她去医院做了一个血常规，虽然人比较较多，但是仍然让她在中午12：00前吃到了饭。之后我们去了市图书馆，帮她借了几本书，其中有一本讲的是男人的进化史，她一看到这本书眼睛都直了，说一定要好好看看。还说我目前只处于初始猿人阶段，还叫我张猩猩，张狒狒，因为我老对她傻笑。 <a id="more"></a> </p><p>不过也确实，我一看到她就很开心。她问了我好几次我喜欢她什么，我告诉她，每次我都是脑袋一片空白，不知从何说起，可能这就是爱情荷尔蒙的分泌会让脑袋反应比较慢。不过我是知道的：  </p><p>我喜欢她笑起来眯成一条缝的眼睛中漏出来的闪闪光芒，我喜欢她陷入回忆迷茫时嘟起来的小嘴吧，我喜欢她那种为别人着想痛苦都自己承受的胸怀，我喜欢她坚强独立的自尊，我喜欢她时刻转动的小脑袋充满活力与乐趣，我喜欢她时而笨笨的傻傻的，时而聪明理智，时而傻甜感性。会有一点小色，但内心又是一本正经。  </p><p>啊哈哈哈，我发现我还真是超级喜欢她，感激和她呆在一起永远也不会腻烦。  </p><p>不过今天她没有戴小胖子的手表，我知道她想要在我面前表达什么，虽然她的会不时抬起左手看看表，但是我还是有点难受，回来之后立即从网上挑选，但是我发现我好像没有办法代替小胖子的手表，因为她说了小胖子为了不让她的手被磨到，选择了陶瓷的表链，又给她刻上了她的字，真的很漂亮。  </p><p>我听着心里很酸，因为看着网上的手表，我不知道我能选择什么样子的，我不知道我用什么样的方式才会让她对我送她的手表喜欢。纠结惆怅中！！！</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;今天陪她去医院做了一个血常规，虽然人比较较多，但是仍然让她在中午12：00前吃到了饭。之后我们去了市图书馆，帮她借了几本书，其中有一本讲的是男人的进化史，她一看到这本书眼睛都直了，说一定要好好看看。还说我目前只处于初始猿人阶段，还叫我张猩猩，张狒狒，因为我老对她傻笑。
+    
+    </summary>
+    
+      <category term="日记" scheme="http://yoursite.com/categories/life/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>2018-03-22</title>
@@ -443,28 +463,6 @@
     
     
       <category term="网络通信" scheme="http://yoursite.com/tags/%E7%BD%91%E7%BB%9C%E9%80%9A%E4%BF%A1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>阻塞和非阻塞、同步和异步</title>
-    <link href="http://yoursite.com/2018/03/10/C-%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98%E5%87%86%E5%A4%87%EF%BC%9A%E9%98%BB%E5%A1%9E%E5%92%8C%E9%9D%9E%E9%98%BB%E5%A1%9E%E3%80%81%E5%90%8C%E6%AD%A5%E5%92%8C%E5%BC%82%E6%AD%A5/"/>
-    <id>http://yoursite.com/2018/03/10/C-面试问题准备：阻塞和非阻塞、同步和异步/</id>
-    <published>2018-03-10T14:11:46.000Z</published>
-    <updated>2018-03-14T13:23:16.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="同步和异步主要针对C端"><a href="#同步和异步主要针对C端" class="headerlink" title="同步和异步主要针对C端"></a>同步和异步主要针对C端</h2><h3 id="同步"><a href="#同步" class="headerlink" title="同步"></a><strong><font color="#DC143C">同步</font></strong></h3><p>所谓同步，就是在c端发出一个功能调用时，在没有得到结果之前，该调用就不返回。也就是必须一件一件事做,等前一件做完了才能做下一件事。 <a id="more"></a></p><blockquote><p>例如普通B/S模式（同步）：提交请求-&gt;等待服务器处理-&gt;处理完毕返回 这个期间客户端浏览器不能干任何事</p></blockquote><h3 id="异步"><a href="#异步" class="headerlink" title="异步"></a><strong><font color="#DC143C">异步</font></strong></h3><p>当c端一个异步过程调用发出后，调用者不能立刻得到结果。实际处理这个调用的部件在完成后，通过状态、通知和回调来通知调用者。</p><blockquote><p>例如 ajax请求（异步）: 请求通过事件触发-&gt;服务器处理（这时浏览器仍然可以作其他事情）-&gt;处理完毕</p></blockquote><h2 id="阻塞和非阻塞针对S端"><a href="#阻塞和非阻塞针对S端" class="headerlink" title="阻塞和非阻塞针对S端"></a>阻塞和非阻塞针对S端</h2><h3 id="阻塞"><a href="#阻塞" class="headerlink" title="阻塞"></a><strong><font color="#DC143C">阻塞</font></strong></h3><p>阻塞调用是指调用结果返回之前，当前线程会被挂起（线程进入非可执行状态，在这个状态下，cpu不会给线程分配时间片，即线程暂停运行）。函数只有在得到结果之后才会返回</p><blockquote><p>比如到你某个时候到A楼一层（假如是内核缓冲区）取快递，但是你不知道快递什么时候过来，你又不能干别的事，只能死等着。但你可以睡觉（进程处于休眠状态），因为你知道快递把货送来时一定会给你打个电话（假定一定能叫醒你）。</p></blockquote><h3 id="非阻塞"><a href="#非阻塞" class="headerlink" title="非阻塞"></a><strong><font color="#DC143C">非阻塞</font></strong></h3><p>在不能立刻得到结果之前，该函数不会阻塞当前线程，而会立刻返回</p><blockquote><p>还是等快递的例子：如果用忙轮询的方法，每隔5分钟到A楼一层(内核缓冲区）去看快递来了没有。如果没来，立即返回。而快递来了，就放在A楼一层，等你去取</p></blockquote><p>综上：</p><p>同步  就是我客户端（c端调用者）调用一个功能，该功能没有结束前，我（c端调用者）死等结果<br>异步  就是我（c端调用者）调用一个功能，不需要知道该功能结果，该功能有结果后通知我（c端调用者）即回调通知。<br>阻塞  就是调用我（s端被调用者，函数），我（s端被调用者，函数）没有接收完数据或者没有得到结果之前，我不会返回。<br>非阻塞 就是调用我（s端被调用者，函数），我（s端被调用者，函数）立即返回，通过select通知调用者</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;同步和异步主要针对C端&quot;&gt;&lt;a href=&quot;#同步和异步主要针对C端&quot; class=&quot;headerlink&quot; title=&quot;同步和异步主要针对C端&quot;&gt;&lt;/a&gt;同步和异步主要针对C端&lt;/h2&gt;&lt;h3 id=&quot;同步&quot;&gt;&lt;a href=&quot;#同步&quot; class=&quot;headerlink&quot; title=&quot;同步&quot;&gt;&lt;/a&gt;&lt;strong&gt;&lt;font color=&quot;#DC143C&quot;&gt;同步&lt;/font&gt;&lt;/strong&gt;&lt;/h3&gt;&lt;p&gt;所谓同步，就是在c端发出一个功能调用时，在没有得到结果之前，该调用就不返回。也就是必须一件一件事做,等前一件做完了才能做下一件事。
-    
-    </summary>
-    
-      <category term="面试" scheme="http://yoursite.com/categories/%E9%9D%A2%E8%AF%95/"/>
-    
-    
-      <category term="OS" scheme="http://yoursite.com/tags/OS/"/>
     
   </entry>
   
